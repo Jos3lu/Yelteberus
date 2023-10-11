@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "CreatorKey",
+  "namespace": "com.hiberus.creatorsProducer.avro",
+  "fields": [{
+    "name": "identifier",
+    "type": "string"
+  }]
+}
