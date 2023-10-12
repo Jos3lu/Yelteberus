@@ -1,0 +1,21 @@
+package com.hiberus.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class CreatorRequestDto {
+    private Long identifier;
+    private String name;
+    private String surname;
+    private LocalDate birth;
+    private String email;
+    private String phone;
+}
