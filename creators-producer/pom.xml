@@ -19,10 +19,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.avro</groupId>
                 <artifactId>avro-maven-plugin</artifactId>
                 <configuration>
@@ -37,7 +33,7 @@
                             <goal>schema</goal>
                         </goals>
                         <configuration>
-                            <sourceDirectory>${project.basedir}/src/main/resources/avro</sourceDirectory>
+                            <sourceDirectory>src/main/resources/avro</sourceDirectory>
                             <fieldVisibility>PRIVATE</fieldVisibility>
                         </configuration>
                     </execution>
@@ -51,7 +47,7 @@
                         <phase>process-resources</phase>
                         <configuration>
                             <sources>
-                                <source>${project.basedir}/target/generated-sources/avro</source>
+                                <source>src/main/resources/avro/generated-sources</source>
                             </sources>
                         </configuration>
                     </execution>

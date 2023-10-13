@@ -75,6 +75,7 @@ services:
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: zookeeper:2181
       SCHEMA_REGISTRY_LISTENERS: http://schema-registry:8081
+      SCHEMA_REGISTRY_AVRO_COMPATIBILITY_LEVEL: 'forward_transitive'
     depends_on:
       - kafka
     restart: always

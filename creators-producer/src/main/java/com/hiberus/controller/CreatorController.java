@@ -10,7 +10,8 @@ public interface CreatorController {
 
     @Operation(summary = "Create a new creator")
     @ApiResponses({
-            @ApiResponse(responseCode = "202", description = "Request sent")
+            @ApiResponse(responseCode = "202", description = "Request sent"),
+            @ApiResponse(responseCode = "400", description = "Bad request")
     })
     ResponseEntity<Void> createCreator(CreatorRequestDto creatorRequestDto);
 
