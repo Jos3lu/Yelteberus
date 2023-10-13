@@ -13,12 +13,14 @@ import java.util.regex.Pattern;
 @Builder
 public class Creator {
 
+    private static final Pattern PATTERN_IDENTIFIER = Pattern
+            .compile("^CREATOR-[A-Z0-9]+$", Pattern.CASE_INSENSITIVE);
     private static final Pattern PATTERN_EMAIL = Pattern
             .compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
     private static final Pattern PATTERN_PHONE = Pattern
             .compile("^(\\+\\d{1,3}( )?)?(\\d{3}[ ]?)(\\d{2}[ ]?){2}\\d{2}$");
 
-    private Long identifier;
+    private String identifier;
     private String name;
     private String surname;
     private LocalDate birth;
@@ -26,7 +28,7 @@ public class Creator {
     private String phone;
 
     public void validCreator() throws CreatorNotValidException {
-        if (incompleteFields() || negativeIdentifier() || invalidEmail() || invalidPhone())
+        if (incompleteFields() || invalidIdentifier() || invalidEmail() || invalidPhone())
             throw new CreatorNotValidException();
     }
 
@@ -35,8 +37,8 @@ public class Creator {
                 email.isBlank() || phone.isBlank();
     }
 
-    private boolean negativeIdentifier() {
-        return identifier < 0;
+    private boolean invalidIdentifier() {
+        return !PATTERN_IDENTIFIER.matcher(identifier).find();
     }
 
     private boolean invalidEmail() {

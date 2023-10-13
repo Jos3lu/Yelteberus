@@ -15,12 +15,12 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class VideoRequestDto {
-    private Long identifier;
+    private String identifier;
     private String title;
     private String duration;
     private LocalDate uploadDate;
     private Format format;
     protected List<Category> categories;
     private String description;
-    private Long creatorIdentifier;
+    private String creatorIdentifier;
 }

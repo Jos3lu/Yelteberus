@@ -16,20 +16,24 @@ import java.util.regex.Pattern;
 @Builder
 public class Video {
 
+    private static final Pattern PATTERN_IDENTIFIER = Pattern
+            .compile("^VIDEO-[A-Z0-9]+$", Pattern.CASE_INSENSITIVE);
     private static final Pattern PATTERN_DURATION = Pattern
             .compile("^(?:.*\\d:)?[0-5]\\d:[0-5]\\d$");
+    private static final Pattern PATTERN_CREATOR_IDENTIFIER = Pattern
+            .compile("^CREATOR-[A-Z0-9]+$", Pattern.CASE_INSENSITIVE);
 
-    private Long identifier;
+    private String identifier;
     private String title;
     private String duration;
     private LocalDate uploadDate;
     private Format format;
     protected List<Category> categories;
     private String description;
-    private Long creatorIdentifier;
+    private String creatorIdentifier;
 
     public void validVideo() throws VideoNotValidException {
-        if (incompleteFields() || negativeIdentifier() || invalidDuration())
+        if (incompleteFields() || invalidIdentifier() || invalidDuration() || invalidCreatorIdentifier())
             throw new VideoNotValidException();
     }
 
@@ -38,12 +42,16 @@ public class Video {
                 format == null || categories == null || description.isBlank() || creatorIdentifier == null;
     }
 
-    private boolean negativeIdentifier() {
-        return identifier < 0;
+    private boolean invalidIdentifier() {
+        return !PATTERN_IDENTIFIER.matcher(identifier).find();
     }
 
     private boolean invalidDuration() {
         return !PATTERN_DURATION.matcher(this.duration).find();
+    }
+
+    private boolean invalidCreatorIdentifier() {
+        return !PATTERN_CREATOR_IDENTIFIER.matcher(creatorIdentifier).find();
     }
 
 }

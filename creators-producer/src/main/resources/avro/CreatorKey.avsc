@@ -4,7 +4,7 @@
   "namespace": "com.hiberus.creatorsProducer.avro",
   "fields": [{
     "name": "identifier",
-    "type": "long",
+    "type": "string",
     "doc": "Identifier of creator"
   }]
 }

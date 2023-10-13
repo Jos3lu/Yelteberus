@@ -74,7 +74,7 @@
     "doc": "Description of video"
   }, {
     "name": "creator_identifier",
-    "type": ["null", "long"],
+    "type": ["null", "string"],
     "default": null,
     "doc": "Identifier of creator associated to the video"
   }]

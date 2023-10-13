@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class CreatorRequestDto {
-    private Long identifier;
+    private String identifier;
     private String name;
     private String surname;
     private LocalDate birth;
