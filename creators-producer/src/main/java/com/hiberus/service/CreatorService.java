@@ -10,6 +10,7 @@ public interface CreatorService {
      * Create a new creator
      *
      * @param creator Creator
+     * @throws CreatorNotValidException Creator not valid
      */
     void createCreator(Creator creator) throws CreatorNotValidException;
 

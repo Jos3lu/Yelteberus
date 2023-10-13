@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "VideoKey",
+  "namespace": "com.hiberus.videosProducer.avro",
+  "fields": [{
+    "name": "identifier",
+    "type": "long",
+    "doc": "Identifier of video"
+  }]
+}

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class CreatorServiceImpl implements CreatorService {
 
-    @Value("${environment.creators-topic}")
+    @Value("${environment.creator-topic}")
     private String creatorTopic;
 
     @Autowired

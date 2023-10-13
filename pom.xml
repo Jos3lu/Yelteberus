@@ -11,6 +11,7 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>creators-producer</module>
+      <module>videos-producer</module>
   </modules>
 
   <parent>

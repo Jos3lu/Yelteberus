@@ -1,9 +1,7 @@
 package com.hiberus.model;
 
 import com.hiberus.exception.CreatorNotValidException;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.regex.Pattern;
@@ -11,6 +9,8 @@ import java.util.regex.Pattern;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Creator {
 
     private static final Pattern PATTERN_EMAIL = Pattern
@@ -25,16 +25,8 @@ public class Creator {
     private String email;
     private String phone;
 
-    public Creator(String name, String surname, LocalDate birth, String email, String phone) {
-        this.name = name;
-        this.surname = surname;
-        this.birth = birth;
-        this.email = email;
-        this.phone = phone;
-    }
-
     public void validCreator() throws CreatorNotValidException {
-        if (incompleteFields() || invalidEmail() || invalidPhone())
+        if (incompleteFields() || negativeIdentifier() || invalidEmail() || invalidPhone())
             throw new CreatorNotValidException();
     }
 
@@ -43,12 +35,16 @@ public class Creator {
                 email.isBlank() || phone.isBlank();
     }
 
+    private boolean negativeIdentifier() {
+        return identifier < 0;
+    }
+
     private boolean invalidEmail() {
-        return !PATTERN_EMAIL.matcher(this.email).find();
+        return !PATTERN_EMAIL.matcher(email).find();
     }
 
     private boolean invalidPhone() {
-        return !PATTERN_PHONE.matcher(this.phone).find();
+        return !PATTERN_PHONE.matcher(phone).find();
     }
 
 }

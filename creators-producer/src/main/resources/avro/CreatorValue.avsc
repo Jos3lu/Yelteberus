@@ -5,25 +5,30 @@
   "fields": [{
     "name": "name",
     "type": ["null", "string"],
-    "default": null
+    "default": null,
+    "doc": "Name of creator"
   }, {
     "name": "surname",
     "type": ["null", "string"],
-    "default": null
+    "default": null,
+    "doc": "Surname of creator"
   }, {
     "name": "birth",
     "type": ["null", {
       "type": "int",
       "logicalType": "date"
     }],
-    "default": null
+    "default": null,
+    "doc": "Date of birth of creator"
   }, {
     "name": "email",
     "type": ["null", "string"],
-    "default": null
+    "default": null,
+    "doc": "Email of creator"
   }, {
     "name": "phone",
     "type": ["null", "string"],
-    "default": null
+    "default": null,
+    "doc": "Phone of creator"
   }]
 }
