@@ -5,7 +5,6 @@ import com.hiberus.videosProducer.avro.VideoKey;
 import com.hiberus.videosProducer.avro.VideoValue;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.KafkaListener;
 

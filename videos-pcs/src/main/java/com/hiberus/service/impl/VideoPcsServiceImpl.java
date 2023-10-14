@@ -28,17 +28,17 @@ public class VideoPcsServiceImpl implements VideoPcsService {
     private VideoPcsKafkaValueMapper videoPcsKafkaValueMapper;
 
     @Autowired
-    private KafkaTemplate<VideoKey, VideoValue> kafkaTemplate;
+    private KafkaTemplate<VideoKey, VideoPcsValue> kafkaTemplate;
 
     @Override
     public void process(VideoKey key, VideoValue value) {
-        VideoPcsValue videoPcsValue = videoPcsKafkaValueMapper.videoValueToVideoPcsvalue(value);
-        videoPcsValue.setViews(randomInt(Integer.MAX_VALUE));
-        videoPcsValue.setResolution(randomEnum(Resolution.class));
-        videoPcsValue.setPrivacy(randomEnum(Privacy.class));
+        VideoPcsValue pcsValue = videoPcsKafkaValueMapper.videoValueToVideoPcsvalue(value);
+        pcsValue.setViews(randomInt(Integer.MAX_VALUE));
+        pcsValue.setResolution(randomEnum(Resolution.class));
+        pcsValue.setPrivacy(randomEnum(Privacy.class));
 
         log.info("Sending video to topic {}", videoPcsTopic);
-        kafkaTemplate.send(videoPcsTopic, key, value);
+        kafkaTemplate.send(videoPcsTopic, key, pcsValue);
     }
 
     private static int randomInt(int bound) {

@@ -13,6 +13,7 @@
     <module>creators-producer</module>
       <module>videos-producer</module>
       <module>videos-pcs</module>
+      <module>videos-aggregator</module>
   </modules>
 
   <parent>
