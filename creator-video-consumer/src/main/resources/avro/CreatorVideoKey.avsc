@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "CreatorVideoKey",
+  "namespace": "com.hiberus.creatorVideoConsumer.avro",
+  "fields": [{
+    "name": "creator_identifier",
+    "type": "string",
+    "doc": "Identifier of creator"
+  }]
+}

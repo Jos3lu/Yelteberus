@@ -1,0 +1,45 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: creator-video-consumer
+  datasource:
+    url: jdbc:postgresql://${yelteberus-db:localhost}:5432/postgres
+    username: postgres
+    password: admin123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+  cloud:
+    #Functions
+    function: process;
+    stream:
+      # Configuration between topics & functions
+      bindings:
+        process-in-0:
+          destination: ${topic-in-0}
+          consumer:
+            concurrency: 1
+            useNativeDecoding: true
+      kafka:
+        streams:
+          # Consumer configuration
+          bindings:
+            process-in-0:
+              consumer:
+                keySerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                valueSerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                applicationId: ${spring.application.name}
+          binder:
+            # Kafka configuration
+            configuration:
+              commit.interval.ms: 100
+              session.timeout.ms: 10000
+              schema.registry.url: http://localhost:8081
+              auto.register.schemas: true
+              default.key.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+              default.value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde

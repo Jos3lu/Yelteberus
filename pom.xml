@@ -15,6 +15,7 @@
       <module>video-pcs</module>
       <module>video-aggregator</module>
       <module>creator-video-mixbi</module>
+      <module>creator-video-consumer</module>
   </modules>
 
   <parent>
