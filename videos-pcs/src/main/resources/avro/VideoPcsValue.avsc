@@ -1,7 +1,7 @@
 {
   "type": "record",
-  "name": "VideoValue",
-  "namespace": "com.hiberus.videosProducer.avro",
+  "name": "VideoPcsValue",
+  "namespace": "com.hiberus.videosPcs.avro",
   "fields": [{
     "name": "title",
     "type": ["null", "string"],
@@ -74,6 +74,44 @@
     "type": ["null", "string"],
     "default": null,
     "doc": "Description of video"
+  }, {
+    "name": "views",
+    "type": ["null", "int"],
+    "default": null,
+    "doc": "Number of views of video"
+  }, {
+    "name": "resolution",
+    "type": ["null", {
+      "type": "enum",
+      "name": "Resolution",
+      "namespace": "com.hiberus.videosEnum.avro",
+      "symbols": [
+        "SD",
+        "HD",
+        "FHD",
+        "QHD",
+        "UHD",
+        "FUHD"
+      ],
+      "default": "FHD"
+    }],
+    "default": null,
+    "doc": "Resolution of video"
+  }, {
+    "name": "privacy",
+    "type": ["null", {
+      "type": "enum",
+      "name": "Privacy",
+      "namespace": "com.hiberus.videosEnum.avro",
+      "symbols": [
+        "PUBLIC",
+        "PRIVATE",
+        "UNLISTED"
+      ],
+      "default": "PUBLIC"
+    }],
+    "default": null,
+    "doc": "Privacy settings of video"
   }, {
     "name": "creator_identifier",
     "type": ["null", "string"],

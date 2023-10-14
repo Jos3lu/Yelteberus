@@ -12,6 +12,7 @@
   <modules>
     <module>creators-producer</module>
       <module>videos-producer</module>
+      <module>videos-pcs</module>
   </modules>
 
   <parent>

@@ -1,8 +1,8 @@
 package com.hiberus.model;
 
 import com.hiberus.exception.VideoNotValidException;
-import com.hiberus.videosProducer.avro.Category;
-import com.hiberus.videosProducer.avro.Format;
+import com.hiberus.videosEnum.avro.Category;
+import com.hiberus.videosEnum.avro.Format;
 import lombok.*;
 
 import java.time.LocalDate;

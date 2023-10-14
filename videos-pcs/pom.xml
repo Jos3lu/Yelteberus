@@ -7,9 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>creators-producer</artifactId>
+    <artifactId>videos-pcs</artifactId>
 
-    <name>creators-producer</name>
+    <name>videos-pcs</name>
     <url>http://maven.apache.org</url>
 
     <properties>

@@ -1,7 +1,7 @@
 package com.hiberus.dto;
 
-import com.hiberus.videosProducer.avro.Category;
-import com.hiberus.videosProducer.avro.Format;
+import com.hiberus.videosEnum.avro.Category;
+import com.hiberus.videosEnum.avro.Format;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
