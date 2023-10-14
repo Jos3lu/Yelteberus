@@ -1,0 +1,44 @@
+server:
+  port: 8085
+
+topic-in-0: videos-pcs
+topic-out-0: videos-aggregator
+
+spring:
+  application:
+    name: video-aggregator
+
+  cloud:
+    # Functions
+    function:
+      definition: aggregateVideos;
+    stream:
+      # Configuration between topics & functions
+      bindings:
+        aggregateVideos-in-0:
+          destination: ${topic-in-0}
+          consumer:
+            concurrency: 1
+            useNativeDecoding: true
+        aggregateVideos-out-0:
+          destination: ${topic-out-0}
+          producer:
+            useNativeEncoding: true
+      kafka:
+        streams:
+          # Consumer configuration
+          bindings:
+            aggregateVideos-in-0:
+              consumer:
+                keySerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                valueSerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                applicationId: ${spring.application.name}
+          # Kafka configuration
+          binder:
+            configuration:
+              commit.interval.ms: 100
+              session.timeout.ms: 10000
+              schema.registry.url: http://localhost:8081
+              auto.register.schemas: true
+              default.key.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+              default.value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde

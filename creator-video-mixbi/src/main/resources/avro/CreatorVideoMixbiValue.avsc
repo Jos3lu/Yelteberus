@@ -1,0 +1,147 @@
+{
+  "type": "record",
+  "name": "CreatorVideoMixbiValue",
+  "namespace": "com.hiberus.creatorVideoMixbi.avro",
+  "fields": [{
+    "name": "creator_identifier",
+    "type": "string",
+    "doc": "Identifier of creator"
+  }, {
+    "name": "name",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Name of creator"
+  }, {
+    "name": "surname",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Surname of creator"
+  }, {
+    "name": "videos",
+    "type": ["null", {
+      "type": "array",
+      "items": ["null", {
+        "type": "record",
+        "namespace": "com.hiberus.videoAggregator.avro",
+        "name": "Video",
+        "fields": [{
+          "name": "video_identifier",
+          "type": "string",
+          "doc": "Identifier of video"
+        }, {
+          "name": "title",
+          "type": ["null", "string"],
+          "default": null,
+          "doc": "Title of video"
+        }, {
+          "name": "duration",
+          "type": ["null", "string"],
+          "default": null,
+          "doc": "Duration of videos in HH:MM:SS"
+        }, {
+          "name": "upload_date",
+          "type": ["null", {
+            "type": "int",
+            "logicalType": "date"
+          }],
+          "default": null,
+          "doc": "Date of upload of video"
+        }, {
+          "name": "format",
+          "type": ["null", {
+            "type": "enum",
+            "name": "Format",
+            "namespace": "com.hiberus.videoEnum.avro",
+            "symbols": [
+              "MP4",
+              "MOV",
+              "WMV",
+              "AVI",
+              "FLV",
+              "MPG",
+              "MKV"
+            ],
+            "default": "MP4"
+          }],
+          "default": null,
+          "doc": "Format of video"
+        }, {
+          "name": "categories",
+          "type": ["null", {
+            "type": "array",
+            "items": {
+              "type": "enum",
+              "name": "Category",
+              "namespace": "com.hiberus.videoEnum.avro",
+              "symbols": [
+                "ANIMATION",
+                "ANIME",
+                "BEAUTY",
+                "SCIENCE",
+                "COOKING",
+                "COMEDY",
+                "SPORTS",
+                "DRAWING",
+                "EDUCATION",
+                "MUSIC",
+                "TECHNOLOGY",
+                "TOPS",
+                "TUTORIAL",
+                "TRAVEL",
+                "GAMES"
+              ],
+              "default": "GAMES"
+            }
+          }],
+          "default": null,
+          "doc": "Categories of video"
+        }, {
+          "name": "description",
+          "type": ["null", "string"],
+          "default": null,
+          "doc": "Description of video"
+        }, {
+          "name": "views",
+          "type": ["null", "int"],
+          "default": null,
+          "doc": "Number of views of video"
+        }, {
+          "name": "resolution",
+          "type": ["null", {
+            "type": "enum",
+            "name": "Resolution",
+            "namespace": "com.hiberus.videoEnum.avro",
+            "symbols": [
+              "SD",
+              "HD",
+              "FHD",
+              "QHD",
+              "UHD",
+              "FUHD"
+            ],
+            "default": "FHD"
+          }],
+          "default": null,
+          "doc": "Resolution of video"
+        }, {
+          "name": "privacy",
+          "type": ["null", {
+            "type": "enum",
+            "name": "Privacy",
+            "namespace": "com.hiberus.videoEnum.avro",
+            "symbols": [
+              "PUBLIC",
+              "PRIVATE",
+              "UNLISTED"
+            ],
+            "default": "PUBLIC"
+          }],
+          "default": null,
+          "doc": "Privacy settings of video"
+        }]
+      }]
+    }],
+    "default": null,
+    "doc": "Array of videos"
+  }]
+}

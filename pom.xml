@@ -10,10 +10,11 @@
   <name>yelteberus</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>creators-producer</module>
-      <module>videos-producer</module>
-      <module>videos-pcs</module>
-      <module>videos-aggregator</module>
+    <module>creator-producer</module>
+      <module>video-producer</module>
+      <module>video-pcs</module>
+      <module>video-aggregator</module>
+      <module>creator-video-mixbi</module>
   </modules>
 
   <parent>

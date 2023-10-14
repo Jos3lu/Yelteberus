@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "CreatorValue",
+  "namespace": "com.hiberus.creatorProducer.avro",
+  "fields": [{
+    "name": "creator_identifier",
+    "type": "string",
+    "doc": "Identifier of creator"
+  }, {
+    "name": "name",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Name of creator"
+  }, {
+    "name": "surname",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Surname of creator"
+  }, {
+    "name": "birth",
+    "type": ["null", {
+      "type": "int",
+      "logicalType": "date"
+    }],
+    "default": null,
+    "doc": "Date of birth of creator"
+  }, {
+    "name": "email",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Email of creator"
+  }, {
+    "name": "phone",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Phone of creator"
+  }]
+}

@@ -1,0 +1,82 @@
+{
+  "type": "record",
+  "name": "VideoValue",
+  "namespace": "com.hiberus.videoProducer.avro",
+  "fields": [{
+    "name": "video_identifier",
+    "type": "string",
+    "doc": "Identifier of video"
+  }, {
+    "name": "title",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Title of video"
+  }, {
+    "name": "duration",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Duration of videos in HH:MM:SS"
+  }, {
+    "name": "upload_date",
+    "type": ["null", {
+      "type": "int",
+      "logicalType": "date"
+    }],
+    "default": null,
+    "doc": "Date of upload of video"
+  }, {
+    "name": "format",
+    "type": ["null", {
+      "type": "enum",
+      "name": "Format",
+      "namespace": "com.hiberus.videoEnum.avro",
+      "symbols": [
+        "MP4",
+        "MOV",
+        "WMV",
+        "AVI",
+        "FLV",
+        "MPG",
+        "MKV"
+      ],
+      "default": "MP4"
+    }],
+    "default": null,
+    "doc": "Format of video"
+  }, {
+    "name": "categories",
+    "type": ["null", {
+      "type": "array",
+      "items": {
+        "type": "enum",
+        "name": "Category",
+        "namespace": "com.hiberus.videoEnum.avro",
+        "symbols": [
+          "ANIMATION",
+          "ANIME",
+          "BEAUTY",
+          "SCIENCE",
+          "COOKING",
+          "COMEDY",
+          "SPORTS",
+          "DRAWING",
+          "EDUCATION",
+          "MUSIC",
+          "TECHNOLOGY",
+          "TOPS",
+          "TUTORIAL",
+          "TRAVEL",
+          "GAMES"
+        ],
+        "default": "GAMES"
+      }
+    }],
+    "default": null,
+    "doc": "Categories of video"
+  }, {
+    "name": "description",
+    "type": ["null", "string"],
+    "default": null,
+    "doc": "Description of video"
+  }]
+}

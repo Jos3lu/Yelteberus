@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "VideoAggregatorKey",
+  "namespace": "com.hiberus.videoAggregator.avro",
+  "fields": [{
+    "name": "creator_identifier",
+    "type": "string",
+    "doc": "Identifier of creator associated to the videos"
+  }]
+}
