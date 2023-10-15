@@ -15,4 +15,12 @@ public interface VideoController {
     })
     ResponseEntity<Void> createVideo(VideoRequestDto videoRequestDto);
 
+    @Operation(summary = "Update the information of a video")
+    @ApiResponses({
+            @ApiResponse(responseCode = "202", description = "Request sent"),
+            @ApiResponse(responseCode = "400", description = "Bad request"),
+            @ApiResponse(responseCode = "404", description = "Not found")
+    })
+    ResponseEntity<Void> updateVideo(String creatorId, String videoId, VideoRequestDto videoRequestDto);
+
 }

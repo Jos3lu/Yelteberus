@@ -82,6 +82,7 @@ public class CreatorServiceImpl implements CreatorService {
             log.error("[creatorProducer] " + key);
             kafkaTemplateDQL.send(creatorTopicDLQ, key, creatorKafkaValueMapper
                     .creatorToCreatorValue(creator));
+            throw new CreatorNotFoundException(creatorId);
         }
 
         // Check if creator is valid
