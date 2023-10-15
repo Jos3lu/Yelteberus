@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -14,10 +15,11 @@ import javax.persistence.*;
 public class Creator {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     private String creatorIdentifier;
     private String name;
     private String surname;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Video> videos;
 
 }

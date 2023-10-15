@@ -17,8 +17,6 @@ import java.util.List;
 public class Video {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     private String videoIdentifier;
     private String title;
     private String duration;
