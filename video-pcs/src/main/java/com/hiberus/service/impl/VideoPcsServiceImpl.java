@@ -38,7 +38,7 @@ public class VideoPcsServiceImpl implements VideoPcsService {
         pcsValue.setResolution(randomEnum(Resolution.class));
         pcsValue.setPrivacy(randomEnum(Privacy.class));
 
-        log.info("[VideosPcs] Sending video to topic {}", videoPcsTopic);
+        log.info("[videoPcs] Sending video to topic {}", videoPcsTopic);
         kafkaTemplate.send(videoPcsTopic, key, pcsValue);
     }
 

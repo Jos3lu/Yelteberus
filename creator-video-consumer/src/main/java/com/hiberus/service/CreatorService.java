@@ -1,7 +1,9 @@
 package com.hiberus.service;
 
 import com.hiberus.exception.CreatorNotFoundException;
+import com.hiberus.exception.VideoNotFoundException;
 import com.hiberus.model.Creator;
+import com.hiberus.model.Video;
 
 import java.util.List;
 
@@ -28,4 +30,13 @@ public interface CreatorService {
      * @return Creator
      */
     Creator getCreator(String creatorId) throws CreatorNotFoundException;
+
+    /**
+     * Get video associated to a creator
+     *
+     * @param creatorId Creator ID
+     * @param videoId Video ID
+     * @return Video
+     */
+    Video getVideoCreator(String creatorId, String videoId) throws CreatorNotFoundException, VideoNotFoundException;
 }

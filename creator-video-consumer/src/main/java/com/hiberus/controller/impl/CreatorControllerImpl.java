@@ -2,8 +2,11 @@ package com.hiberus.controller.impl;
 
 import com.hiberus.controller.CreatorController;
 import com.hiberus.dto.CreatorResponseDto;
+import com.hiberus.dto.VideoResponseDto;
 import com.hiberus.exception.CreatorNotFoundException;
+import com.hiberus.exception.VideoNotFoundException;
 import com.hiberus.mapper.CreatorMapper;
+import com.hiberus.mapper.VideoMapper;
 import com.hiberus.service.CreatorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +27,9 @@ public class CreatorControllerImpl implements CreatorController {
     @Autowired
     private CreatorMapper creatorMapper;
 
+    @Autowired
+    private VideoMapper videoMapper;
+
     @Override
     @GetMapping
     public ResponseEntity<List<CreatorResponseDto>> getCreators() {
@@ -36,9 +42,22 @@ public class CreatorControllerImpl implements CreatorController {
     @GetMapping("/{creatorId}")
     public ResponseEntity<CreatorResponseDto> getCreator(@PathVariable String creatorId) {
         try {
-            return ResponseEntity.ok(creatorMapper.creatorToCreatorResponseDto(creatorService.getCreator(creatorId)));
+            return ResponseEntity.ok(creatorMapper.creatorToCreatorResponseDto(creatorService
+                    .getCreator(creatorId)));
         } catch (CreatorNotFoundException e) {
             return ResponseEntity.notFound().build();
         }
     }
+
+    @Override
+    @GetMapping("/{creatorId}/videos/{videoId}")
+    public ResponseEntity<VideoResponseDto> getVideoCreator(@PathVariable String creatorId, @PathVariable String videoId) {
+        try {
+            return ResponseEntity.ok(videoMapper.videoToVideoResponseDto(creatorService.
+                    getVideoCreator(creatorId, videoId)));
+        } catch (CreatorNotFoundException | VideoNotFoundException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 }

@@ -37,9 +37,9 @@ public class VideoServiceImpl implements VideoService {
         try {
             video.validVideo();
         } catch (VideoNotValidException e) {
-            String key = "Video '" + video.getVideoIdentifier() + "' of creator '" +
+            String key = "Video '" + video.getVideoIdentifier() + " of creator " +
                     video.getCreatorIdentifier() + "' not valid";
-            log.error(key);
+            log.error("[videoProducer] " + key);
             kafkaTemplateDLQ.send(videoTopicDLQ, key, videoKafkaValueMapper
                     .videoToVideoValue(video));
             throw new VideoNotValidException();
@@ -53,7 +53,7 @@ public class VideoServiceImpl implements VideoService {
         VideoValue videoValue = videoKafkaValueMapper
                 .videoToVideoValue(video);
 
-        log.info("[VideosProducer] Sending video to topic {}", videoTopic);
+        log.info("[videoProducer] Sending video to topic {}", videoTopic);
         kafkaTemplate.send(videoTopic, videoKey, videoValue);
     }
 

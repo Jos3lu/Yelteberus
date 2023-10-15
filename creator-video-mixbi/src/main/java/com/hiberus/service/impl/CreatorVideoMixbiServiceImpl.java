@@ -41,7 +41,7 @@ public class CreatorVideoMixbiServiceImpl implements CreatorVideoMixbiService {
                             .setVideos(videoValue.getVideos())
                             .build())
                     .toStream()
-                    .peek((k, v) -> log.info("Created join of creator and videos -> key: {}, value: {}", k, v));
+                    .peek((k, v) -> log.info("[creatorVideoMixbi] Creator and videos grouped -> key: {}, value: {}", k, v));
         };
     }
 

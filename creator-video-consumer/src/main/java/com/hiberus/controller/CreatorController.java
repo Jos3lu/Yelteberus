@@ -1,6 +1,7 @@
 package com.hiberus.controller;
 
 import com.hiberus.dto.CreatorResponseDto;
+import com.hiberus.dto.VideoResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -21,5 +22,11 @@ public interface CreatorController {
             @ApiResponse(responseCode = "200", description = "Successfully recovered")
     })
     ResponseEntity<CreatorResponseDto> getCreator(String creatorId);
+
+    @Operation(summary = "Get video associated to a creator")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Successfully recovered")
+    })
+    ResponseEntity<VideoResponseDto> getVideoCreator(String creatorId, String videoId);
 
 }

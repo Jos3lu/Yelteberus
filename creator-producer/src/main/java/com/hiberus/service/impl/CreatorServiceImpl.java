@@ -38,7 +38,7 @@ public class CreatorServiceImpl implements CreatorService {
         try {
             creator.validCreator();
         } catch (CreatorNotValidException e) {
-            String key = "Creator '" + creator.getCreatorIdentifier() + "' not valid";
+            String key = "[creatorProducer] Creator " + creator.getCreatorIdentifier() + " not valid";
             log.error(key);
             kafkaTemplateDQL.send(creatorTopicDLQ, key, creatorKafkaValueMapper
                     .creatorToCreatorValue(creator));
@@ -52,7 +52,7 @@ public class CreatorServiceImpl implements CreatorService {
         CreatorValue creatorValue = creatorKafkaValueMapper
                 .creatorToCreatorValue(creator);
 
-        log.info("[CreatorsProducer] Sending creator to topic {}", creatorTopic);
+        log.info("[creatorProducer] Sending creator to topic {}", creatorTopic);
         kafkaTemplate.send(creatorTopic, creatorKey, creatorValue);
     }
 }

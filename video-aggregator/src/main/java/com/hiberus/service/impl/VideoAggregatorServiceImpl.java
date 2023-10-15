@@ -29,12 +29,12 @@ public class VideoAggregatorServiceImpl implements VideoAggregatorService {
     @Override
     public Function<KStream<VideoKey, VideoPcsValue>, KStream<VideoAggregatorKey, VideoAggregatorValue>> aggregateVideos() {
         return videoKeyVideoPcsValueKStream -> videoKeyVideoPcsValueKStream
-                .peek((k, v) -> log.info("[videosAggregator] Received video -> key: {}, value: {}", k, v))
+                .peek((k, v) -> log.info("[videoAggregator] Received video -> key: {}, value: {}", k, v))
                 .selectKey((k, v) -> VideoAggregatorKey.newBuilder().setCreatorIdentifier(k.getCreatorIdentifier()).build())
                 .groupByKey()
                 .aggregate(initializer, aggregator, Named.as("VIDEO_AGGREGATOR"), Materialized.as("VIDEO_AGGREGATOR"))
                 .toStream()
-                .peek((k, v) -> log.info("[videosAggregator] Grouped videos -> key: {}, value: {}", k, v));
+                .peek((k, v) -> log.info("[videoAggregator] Grouped videos -> key: {}, value: {}", k, v));
     }
 
 }
