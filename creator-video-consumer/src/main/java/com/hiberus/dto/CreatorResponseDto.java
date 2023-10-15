@@ -7,9 +7,9 @@ import java.util.List;
 
 @Data
 @Builder
-public class CreatorDto {
+public class CreatorResponseDto {
     private String creatorIdentifier;
     private String name;
     private String surname;
-    private List<VideoDto> videos;
+    private List<VideoResponseDto> videos;
 }

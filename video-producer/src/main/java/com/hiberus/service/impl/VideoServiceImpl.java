@@ -29,7 +29,7 @@ public class VideoServiceImpl implements VideoService {
     private KafkaTemplate<VideoKey, VideoValue> kafkaTemplate;
 
     @Autowired
-    private KafkaTemplate<String, String> kafkaTemplateDLQ;
+    private KafkaTemplate<String, VideoValue> kafkaTemplateDLQ;
 
     @Override
     public void createVideo(Video video) throws VideoNotValidException {
@@ -37,7 +37,11 @@ public class VideoServiceImpl implements VideoService {
         try {
             video.validVideo();
         } catch (VideoNotValidException e) {
-            kafkaTemplateDLQ.send(videoTopicDLQ, video.getVideoIdentifier(), "Video not valid");
+            String key = "Video '" + video.getVideoIdentifier() + "' of creator '" +
+                    video.getCreatorIdentifier() + "' not valid";
+            log.error(key);
+            kafkaTemplateDLQ.send(videoTopicDLQ, key, videoKafkaValueMapper
+                    .videoToVideoValue(video));
             throw new VideoNotValidException();
         }
 

@@ -29,7 +29,8 @@ public class CreatorServiceImpl implements CreatorService {
     @Autowired
     private KafkaTemplate<CreatorKey, CreatorValue> kafkaTemplate;
 
-    @Autowired KafkaTemplate<String, String> kafkaTemplateDQL;
+    @Autowired
+    private KafkaTemplate<String, CreatorValue> kafkaTemplateDQL;
 
     @Override
     public void createCreator(Creator creator) throws CreatorNotValidException {
@@ -37,7 +38,10 @@ public class CreatorServiceImpl implements CreatorService {
         try {
             creator.validCreator();
         } catch (CreatorNotValidException e) {
-            kafkaTemplateDQL.send(creatorTopicDLQ, creator.getCreatorIdentifier(), "Creator not valid");
+            String key = "Creator '" + creator.getCreatorIdentifier() + "' not valid";
+            log.error(key);
+            kafkaTemplateDQL.send(creatorTopicDLQ, key, creatorKafkaValueMapper
+                    .creatorToCreatorValue(creator));
             throw new CreatorNotValidException();
         }
 

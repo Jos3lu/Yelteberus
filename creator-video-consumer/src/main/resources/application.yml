@@ -1,6 +1,8 @@
 server:
   port: 8087
 
+topic-in-0: creators-videos
+
 spring:
   application:
     name: creator-video-consumer

@@ -33,13 +33,18 @@ public class Video {
     private String description;
 
     public void validVideo() throws VideoNotValidException {
-        if (incompleteFields() || invalidVideoIdentifier() || invalidCreatorIdentifier() || invalidDuration())
+        if (incompleteFields() || emptyFields() || invalidVideoIdentifier() || invalidCreatorIdentifier() || invalidDuration())
             throw new VideoNotValidException();
     }
 
     private boolean incompleteFields() {
-        return videoIdentifier == null || creatorIdentifier == null || title.isBlank() || duration.isBlank() ||
-                uploadDate == null || format == null || categories == null || description.isBlank();
+        return videoIdentifier == null || creatorIdentifier == null || title == null || duration == null ||
+                uploadDate == null || format == null || categories == null || description == null;
+    }
+
+    private boolean emptyFields() {
+        return videoIdentifier.isBlank() || creatorIdentifier.isBlank() || title.isBlank() ||
+                duration.isBlank() || description.isBlank();
     }
 
     private boolean invalidVideoIdentifier() {

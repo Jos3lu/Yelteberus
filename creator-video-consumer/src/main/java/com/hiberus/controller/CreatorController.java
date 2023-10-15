@@ -1,6 +1,6 @@
 package com.hiberus.controller;
 
-import com.hiberus.dto.CreatorDto;
+import com.hiberus.dto.CreatorResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -14,6 +14,12 @@ public interface CreatorController {
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Successfully recovered")
     })
-    ResponseEntity<List<CreatorDto>> getCreators();
+    ResponseEntity<List<CreatorResponseDto>> getCreators();
+
+    @Operation(summary = "Get creator by identifier")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Successfully recovered")
+    })
+    ResponseEntity<CreatorResponseDto> getCreator(String creatorId);
 
 }

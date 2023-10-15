@@ -28,12 +28,17 @@ public class Creator {
     private String phone;
 
     public void validCreator() throws CreatorNotValidException {
-        if (incompleteFields() || invalidCreatorIdentifier() || invalidEmail() || invalidPhone())
+        if (incompleteFields() || emptyFields() || invalidCreatorIdentifier() || invalidEmail() || invalidPhone())
             throw new CreatorNotValidException();
     }
 
     private boolean incompleteFields() {
-        return creatorIdentifier == null || name.isBlank() || surname.isBlank() || birth == null ||
+        return creatorIdentifier == null || name == null || surname == null || birth == null ||
+                email == null || phone == null;
+    }
+
+    private boolean emptyFields() {
+        return creatorIdentifier.isBlank() || name.isBlank() || surname.isBlank() ||
                 email.isBlank() || phone.isBlank();
     }
 

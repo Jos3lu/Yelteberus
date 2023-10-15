@@ -9,6 +9,15 @@ echo $CREATORS_VALUE_SOFT
 echo $CREATORS_VALUE_HARD
 echo $CREATORS_KEY_HARD
 
+CREATORS_DLQ_KEY_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/creators-dlq-key)
+CREATORS_DQL_VALUE_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/creators-dlq-value)
+CREATORS_DLQ_KEY_HARD=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/creators-dlq-key?permanent=true)
+CREATORS_DQL_VALUE_HARD=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/creators-dlq-value?permanent=true)
+echo $CREATORS_DLQ_KEY_SOFT
+echo $CREATORS_DLQ_VALUE_SOFT
+echo $CREATORS_DLQ_KEY_HARD
+echo $CREATORS_DLQ_VALUE_HARD
+
 VIDEOS_KEY_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-key)
 VIDEOS_VALUE_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-value)
 VIDEOS_KEY_HARD=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-key?permanent=true)
@@ -17,6 +26,15 @@ echo $VIDEOS_KEY_SOFT
 echo $VIDEOS_VALUE_SOFT
 echo $VIDEOS_KEY_HARD
 echo $VIDEOS_VALUE_HARD
+
+VIDEOS_DLQ_KEY_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-dlq-key)
+VIDEOS_DQL_VALUE_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-dlq-value)
+VIDEOS_DLQ_KEY_HARD=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-dlq-key?permanent=true)
+VIDEOS_DQL_VALUE_HARD=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-dlq-value?permanent=true)
+echo $VIDEOS_DLQ_KEY_SOFT
+echo $VIDEOS_DLQ_VALUE_SOFT
+echo $VIDEOS_DLQ_KEY_HARD
+echo $VIDEOS_DLQ_VALUE_HARD
 
 VIDEOS_PCS_KEY_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-pcs-key)
 VIDEOS_PCS_VALUE_SOFT=$(curl --silent -X DELETE -u client:client http://localhost:8081/subjects/videos-pcs-value)

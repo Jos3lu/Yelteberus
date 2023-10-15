@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
 
 @Entity
@@ -22,6 +21,7 @@ public class Video {
     private String duration;
     private LocalDate uploadDate;
     private String format;
+    @ElementCollection
     private List<String> categories;
     private String description;
     private Integer views;

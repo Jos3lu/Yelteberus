@@ -1,7 +1,7 @@
 {
   "type": "record",
-  "name": "CreatorVideoMixbiValue",
-  "namespace": "com.hiberus.creatorVideoMixbi.avro",
+  "name": "CreatorVideoValue",
+  "namespace": "com.hiberus.creatorVideoConsumer.avro",
   "fields": [{
     "name": "creator_identifier",
     "type": "string",

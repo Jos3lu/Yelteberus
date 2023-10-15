@@ -2,8 +2,8 @@ package com.hiberus.service;
 
 import com.hiberus.creatorProducer.avro.CreatorKey;
 import com.hiberus.creatorProducer.avro.CreatorValue;
-import com.hiberus.creatorVideoMixbi.avro.CreatorVideoMixbiValue;
-import com.hiberus.creatorVideoMixbi.avro.CreatorVideoMixbiKey;
+import com.hiberus.creatorVideoConsumer.avro.CreatorVideoKey;
+import com.hiberus.creatorVideoConsumer.avro.CreatorVideoValue;
 import com.hiberus.videoAggregator.avro.VideoAggregatorValue;
 import com.hiberus.videoAggregator.avro.VideoAggregatorKey;
 import org.apache.kafka.streams.kstream.KStream;
@@ -18,6 +18,6 @@ public interface CreatorVideoMixbiService {
      * @return Creator associated to the videos
      */
     BiFunction<KStream<CreatorKey, CreatorValue>, KStream<VideoAggregatorKey, VideoAggregatorValue>,
-            KStream<CreatorVideoMixbiKey, CreatorVideoMixbiValue>> joiner();
+            KStream<CreatorVideoKey, CreatorVideoValue>> joiner();
 
 }
