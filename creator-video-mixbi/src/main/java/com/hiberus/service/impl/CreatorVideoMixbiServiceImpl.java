@@ -34,7 +34,9 @@ public class CreatorVideoMixbiServiceImpl implements CreatorVideoMixbiService {
                             .setCreatorIdentifier(k.getCreatorIdentifier()).build())
                     .toTable(Named.as("VIDEO_MIXBI"), Materialized.as("VIDEO_MIXBI"));
 
-            return creatorKTable.join(videoKTable, (creatorValue, videoValue) -> CreatorVideoValue.newBuilder()
+            return creatorKTable.join(videoKTable, (creatorValue, videoValue) -> creatorValue == null
+                            ? null
+                            : CreatorVideoValue.newBuilder()
                             .setCreatorIdentifier(creatorValue.getCreatorIdentifier())
                             .setName(creatorValue.getName())
                             .setSurname(creatorValue.getSurname())

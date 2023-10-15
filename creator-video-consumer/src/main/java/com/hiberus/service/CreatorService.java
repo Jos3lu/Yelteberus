@@ -24,6 +24,13 @@ public interface CreatorService {
     void saveCreator(Creator creator);
 
     /**
+     * Detele creator (and videos) in database
+     *
+     * @param creatorIdentifier Creator identifier
+     */
+    void deleteCreator(String creatorIdentifier);
+
+    /**
      * Get creator by ID
      *
      * @param creatorId Creator ID
@@ -39,4 +46,5 @@ public interface CreatorService {
      * @return Video
      */
     Video getVideoCreator(String creatorId, String videoId) throws CreatorNotFoundException, VideoNotFoundException;
+
 }

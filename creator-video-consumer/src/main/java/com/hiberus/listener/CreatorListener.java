@@ -26,8 +26,12 @@ public class CreatorListener {
     public Consumer<KStream<CreatorVideoKey, CreatorVideoValue>> process() {
         return creatorKStream -> creatorKStream
                 .peek((k, v) -> log.info("Received creator with key: {}", k))
-                .peek((k, v) -> creatorService
-                        .saveCreator(creatorMapper.creatorVideoValueToCreator(v)));
+                .peek((k, v) -> {
+                    if (v == null)
+                        creatorService.deleteCreator(k.getCreatorIdentifier());
+                    else
+                        creatorService.saveCreator(creatorMapper.creatorVideoValueToCreator(v));
+                });
     }
 
 }

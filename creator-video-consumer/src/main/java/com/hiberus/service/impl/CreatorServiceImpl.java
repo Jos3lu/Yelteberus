@@ -32,6 +32,12 @@ public class CreatorServiceImpl implements CreatorService {
     }
 
     @Override
+    public void deleteCreator(String creatorIdentifier) {
+        log.info("[CreatorVideoConsumer] Deleting creator");
+        creatorRepository.deleteById(creatorIdentifier);
+    }
+
+    @Override
     public Creator getCreator(String creatorId) throws CreatorNotFoundException {
         log.info("[CreatorVideoConsumer] Searching creator {}", creatorId);
         return creatorRepository.findById(creatorId)
