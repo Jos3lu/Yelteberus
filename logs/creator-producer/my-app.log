@@ -1771,3 +1771,25 @@ Identify and stop the process that's listening on port 8082 or configure this ap
 2023-10-16 22:39:36.994  INFO 28272 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
 2023-10-16 22:39:36.994  INFO 28272 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
 2023-10-16 22:39:36.995  INFO 28272 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 22:44:18.009  INFO 37800 --- [main] com.hiberus.CreatorProducerApplication   : Starting CreatorProducerApplication using Java 17.0.8 on HL-014830 with PID 37800 (C:\Users\jlsierra\University_Microservicios\yelteberus\creator-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:44:18.014  INFO 37800 --- [main] com.hiberus.CreatorProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:44:20.993  INFO 37800 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:44:21.023  INFO 37800 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:44:21.238  INFO 37800 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b1e4f106-5fc1-3447-9e39-87b7cc310154
+2023-10-16 22:44:22.321  INFO 37800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-16 22:44:22.342  INFO 37800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:44:22.343  INFO 37800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:44:22.710  INFO 37800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:44:22.711  INFO 37800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4577 ms
+2023-10-16 22:44:25.724  INFO 37800 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:44:27.696  INFO 37800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:44:27.883  INFO 37800 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:44:28.196  INFO 37800 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:44:28.199  INFO 37800 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:44:28.210  INFO 37800 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:44:28.305  INFO 37800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-16 22:44:30.131  INFO 37800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:44:30.188  INFO 37800 --- [main] com.hiberus.CreatorProducerApplication   : Started CreatorProducerApplication in 14.94 seconds (JVM running for 16.231)
+2023-10-16 22:44:30.325  INFO 37800 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:44:30.326  INFO 37800 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:44:30.326  INFO 37800 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'

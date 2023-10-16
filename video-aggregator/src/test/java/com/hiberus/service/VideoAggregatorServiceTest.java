@@ -1,4 +1,4 @@
-package com.hiberus;
+package com.hiberus.service;
 
 import com.hiberus.utils.Consumer;
 import com.hiberus.utils.Producer;
