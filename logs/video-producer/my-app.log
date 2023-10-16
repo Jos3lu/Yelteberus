@@ -23,3 +23,1486 @@
 2023-10-16 10:50:43.157  INFO 20224 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
 2023-10-16 10:50:43.165  INFO 20224 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
 2023-10-16 10:50:43.170  INFO 20224 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:14:22.312  INFO 17368 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 17368 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 21:14:22.319  INFO 17368 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 21:14:23.888  INFO 17368 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 21:14:23.905  INFO 17368 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 21:14:24.063  INFO 17368 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 21:14:24.748  INFO 17368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 21:14:24.765  INFO 17368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 21:14:24.766  INFO 17368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 21:14:24.936  INFO 17368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 21:14:24.937  INFO 17368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2535 ms
+2023-10-16 21:14:26.626  INFO 17368 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 21:14:27.972  INFO 17368 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:14:28.053  INFO 17368 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 21:14:28.183  INFO 17368 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 21:14:28.183  INFO 17368 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 21:14:28.185  INFO 17368 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:14:28.221  INFO 17368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 21:14:29.394  INFO 17368 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:14:29.423  INFO 17368 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 8.788 seconds (JVM running for 9.341)
+2023-10-16 21:15:55.964  INFO 17368 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 21:15:55.965  INFO 17368 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 21:15:55.969  INFO 17368 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-16 21:22:29.466  INFO 17368 --- [http-nio-8083-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 726 ms
+2023-10-16 21:24:04.000  INFO 17368 --- [http-nio-8083-exec-8] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:24:04.062  INFO 17368 --- [http-nio-8083-exec-8] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 21:24:04.108  INFO 17368 --- [http-nio-8083-exec-8] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:24:04.123  INFO 17368 --- [http-nio-8083-exec-8] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:24:04.141  INFO 17368 --- [http-nio-8083-exec-8] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 21:24:04.207  INFO 17368 --- [http-nio-8083-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 21:24:04.207  INFO 17368 --- [http-nio-8083-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 21:24:04.207  INFO 17368 --- [http-nio-8083-exec-8] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697484244204
+2023-10-16 21:24:04.602  INFO 17368 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 6PPc6K4vSlqt2VmmJgoeRQ
+2023-10-16 21:24:04.606  INFO 17368 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2002 with epoch 0
+2023-10-16 21:26:15.691  INFO 17368 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 21:26:15.692  INFO 17368 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 21:26:15.693  INFO 17368 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:26:15.700  INFO 17368 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 21:26:15.706  INFO 17368 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 21:26:15.707  INFO 17368 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 21:26:15.707  INFO 17368 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 21:26:15.708  INFO 17368 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 21:28:32.218  INFO 21160 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 21160 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 21:28:32.225  INFO 21160 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 21:28:33.972  INFO 21160 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 21:28:33.986  INFO 21160 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 21:28:34.170  INFO 21160 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 21:28:35.023  INFO 21160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 21:28:35.045  INFO 21160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 21:28:35.045  INFO 21160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 21:28:35.322  INFO 21160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 21:28:35.322  INFO 21160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3017 ms
+2023-10-16 21:28:37.111  INFO 21160 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 21:28:38.519  INFO 21160 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:28:38.609  INFO 21160 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 21:28:38.739  INFO 21160 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 21:28:38.739  INFO 21160 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 21:28:38.740  INFO 21160 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:28:38.775  INFO 21160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 21:28:40.009  INFO 21160 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:28:40.043  INFO 21160 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 9.658 seconds (JVM running for 10.313)
+2023-10-16 21:28:40.839  INFO 21160 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 21:28:40.839  INFO 21160 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 21:28:40.841  INFO 21160 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-16 21:30:03.957  INFO 21160 --- [http-nio-8083-exec-6] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:30:04.032  INFO 21160 --- [http-nio-8083-exec-6] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 21:30:04.100  INFO 21160 --- [http-nio-8083-exec-6] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:30:04.191  INFO 21160 --- [http-nio-8083-exec-6] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:30:04.256  INFO 21160 --- [http-nio-8083-exec-6] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 21:30:04.620  INFO 21160 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 21:30:04.629  INFO 21160 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 21:30:04.634  INFO 21160 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697484604600
+2023-10-16 21:30:05.461  INFO 21160 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 6PPc6K4vSlqt2VmmJgoeRQ
+2023-10-16 21:30:05.468  INFO 21160 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2009 with epoch 0
+2023-10-16 21:32:19.840  INFO 21160 --- [http-nio-8083-exec-10] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:37:04.045  WARN 21160 --- [http-nio-8083-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2023-10-16 21:37:43.287  WARN 21160 --- [http-nio-8083-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2023-10-16 21:38:09.991  INFO 21160 --- [http-nio-8083-exec-6] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:39:10.019  INFO 21160 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-10-16 21:43:36.843  INFO 21160 --- [http-nio-8083-exec-2] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:51:51.423  INFO 21160 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 21:51:51.423  INFO 21160 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 21:51:51.423  INFO 21160 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:51:51.423  INFO 21160 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 21:51:51.439  INFO 21160 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 21:51:51.439  INFO 21160 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 21:51:51.439  INFO 21160 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 21:51:51.439  INFO 21160 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 21:57:01.799  INFO 37860 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 37860 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 21:57:01.806  INFO 37860 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 21:57:04.811  INFO 37860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 21:57:04.843  INFO 37860 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 21:57:05.092  INFO 37860 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 21:57:06.316  INFO 37860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 21:57:06.328  INFO 37860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 21:57:06.329  INFO 37860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 21:57:06.707  INFO 37860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 21:57:06.708  INFO 37860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4792 ms
+2023-10-16 21:57:09.785  INFO 37860 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 21:57:12.464  INFO 37860 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:57:12.669  INFO 37860 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 21:57:12.962  INFO 37860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 21:57:12.963  INFO 37860 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 21:57:12.965  INFO 37860 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 21:57:13.033  INFO 37860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 21:57:14.022  INFO 37860 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 21:57:14.023  INFO 37860 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 21:57:14.029  INFO 37860 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-10-16 21:57:14.695  INFO 37860 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 21:57:14.776  INFO 37860 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 15.843 seconds (JVM running for 16.908)
+2023-10-16 21:59:07.410  INFO 37860 --- [http-nio-8083-exec-10] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 21:59:07.538  INFO 37860 --- [http-nio-8083-exec-10] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 21:59:07.656  INFO 37860 --- [http-nio-8083-exec-10] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:59:07.700  INFO 37860 --- [http-nio-8083-exec-10] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 21:59:07.726  INFO 37860 --- [http-nio-8083-exec-10] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 21:59:07.845  INFO 37860 --- [http-nio-8083-exec-10] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 21:59:07.845  INFO 37860 --- [http-nio-8083-exec-10] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 21:59:07.846  INFO 37860 --- [http-nio-8083-exec-10] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697486347840
+2023-10-16 21:59:09.125  INFO 37860 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 6PPc6K4vSlqt2VmmJgoeRQ
+2023-10-16 21:59:09.127  INFO 37860 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 3004 with epoch 0
+2023-10-16 22:00:25.151  INFO 37860 --- [http-nio-8083-exec-9] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:00:40.650  INFO 37860 --- [http-nio-8083-exec-10] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:01:17.466  INFO 37860 --- [http-nio-8083-exec-6] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:03:48.158  INFO 37860 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:03:48.159  INFO 37860 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:03:48.161  INFO 37860 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:03:48.168  INFO 37860 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 22:03:48.176  INFO 37860 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:03:48.177  INFO 37860 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:03:48.178  INFO 37860 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:03:48.178  INFO 37860 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 22:15:02.476  INFO 15632 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 15632 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:15:02.480  INFO 15632 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:15:06.173  INFO 15632 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:15:06.245  INFO 15632 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:15:06.622  INFO 15632 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 22:15:08.986  INFO 15632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 22:15:09.042  INFO 15632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:15:09.042  INFO 15632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:15:09.760  INFO 15632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:15:09.761  INFO 15632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7172 ms
+2023-10-16 22:15:13.343  INFO 15632 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:15:15.929  INFO 15632 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:15:16.119  INFO 15632 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:15:16.483  INFO 15632 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:15:16.484  INFO 15632 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:15:16.486  INFO 15632 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:15:16.554  INFO 15632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 22:15:18.273  INFO 15632 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:15:18.274  INFO 15632 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:15:18.277  INFO 15632 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-16 22:15:18.574  INFO 15632 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:15:18.653  INFO 15632 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 19.284 seconds (JVM running for 20.506)
+2023-10-16 22:18:11.172  INFO 15632 --- [http-nio-8083-exec-4] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:18:11.206  INFO 15632 --- [http-nio-8083-exec-4] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 22:18:11.246  INFO 15632 --- [http-nio-8083-exec-4] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:18:11.271  INFO 15632 --- [http-nio-8083-exec-4] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:18:11.293  INFO 15632 --- [http-nio-8083-exec-4] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 22:18:11.360  INFO 15632 --- [http-nio-8083-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:18:11.361  INFO 15632 --- [http-nio-8083-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:18:11.361  INFO 15632 --- [http-nio-8083-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697487491359
+2023-10-16 22:18:11.851  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:11.852  INFO 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: VnAxsynPS6OzCfqwwm_9qQ
+2023-10-16 22:18:11.854  INFO 15632 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 4 with epoch 0
+2023-10-16 22:18:11.965  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.067  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.168  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.271  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.374  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 8 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.476  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 9 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.578  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 10 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.683  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 11 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.785  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 12 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.887  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 13 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:12.990  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 14 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.093  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 15 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.196  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 16 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.301  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 17 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.407  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 18 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.511  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 19 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.614  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 20 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.717  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 21 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.820  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 22 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:13.922  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 23 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.024  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 24 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.126  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 25 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.228  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 26 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.330  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 27 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.432  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 28 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.534  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 29 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.642  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 30 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.745  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 31 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.847  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 32 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:14.950  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 33 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.054  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 34 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.169  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 35 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.272  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 36 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.375  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 37 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.477  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 38 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.580  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 39 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.683  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 40 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.787  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 41 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.889  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 42 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:15.991  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 43 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.093  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 44 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.195  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 45 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.297  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 46 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.399  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 47 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.504  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 48 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.616  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 49 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.720  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 50 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.823  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 51 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:16.926  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 52 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.028  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 53 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.130  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 54 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.233  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 55 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.337  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 56 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.440  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 57 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.543  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 58 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.645  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 59 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.752  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 60 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.854  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 61 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:17.957  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 62 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.059  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 63 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.162  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 64 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.265  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 65 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.373  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 66 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.475  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 67 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.590  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 68 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.693  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 69 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.796  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 70 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:18.901  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 71 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.005  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 72 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.118  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 73 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.222  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 74 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.325  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 75 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.427  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 76 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.530  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 77 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.634  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 78 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.752  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 79 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.855  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 80 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:19.967  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 81 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.069  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 82 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.172  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 83 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.273  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 84 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.375  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 85 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.478  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 86 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.580  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 87 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.683  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 88 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.786  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 89 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.888  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 90 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:20.991  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 91 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.094  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 92 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.202  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 93 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.306  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 94 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.410  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 95 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.514  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 96 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.621  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 97 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.724  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 98 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.840  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 99 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:21.944  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 100 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.059  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 101 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.160  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 102 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.265  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 103 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.367  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 104 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.470  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 105 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.572  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 106 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.674  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 107 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.778  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 108 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.880  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 109 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:22.983  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 110 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.086  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 111 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.188  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 112 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.289  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 113 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.392  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 114 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.493  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 115 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.597  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 116 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.700  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 117 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.802  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 118 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:23.905  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 119 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.021  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 120 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.124  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 121 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.225  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 122 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.331  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 123 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.434  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 124 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.539  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 125 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.642  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 126 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.744  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 127 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.846  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 128 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:24.947  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 129 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.050  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 130 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.152  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 131 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.253  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 132 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.355  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 133 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.457  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 134 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.559  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 135 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.662  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 136 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.764  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 137 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.869  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 138 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:25.970  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 139 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.072  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 140 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.175  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 141 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.281  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 142 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.386  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 143 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.486  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 144 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.587  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 145 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.689  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 146 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.792  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 147 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:26.894  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 148 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.005  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 149 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.115  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 150 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.225  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 151 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.328  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 152 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.430  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 153 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.532  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 154 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.633  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 155 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.735  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 156 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.847  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 157 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:27.949  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 158 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.051  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 159 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.154  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 160 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.256  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 161 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.358  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 162 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.460  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 163 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.562  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 164 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.664  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 165 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.768  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 166 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.868  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 167 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:28.970  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 168 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.072  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 169 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.174  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 170 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.282  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 171 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.382  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 172 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.484  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 173 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.591  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 174 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.695  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 175 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.798  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 176 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:29.900  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 177 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.002  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 178 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.109  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 179 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.211  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 180 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.313  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 181 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.417  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 182 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.518  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 183 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.621  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 184 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.725  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 185 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.827  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 186 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:30.929  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 187 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.032  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 188 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.134  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 189 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.242  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 190 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.346  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 191 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.448  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 192 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.551  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 193 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.654  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 194 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.774  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 195 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.874  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 196 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:31.988  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 197 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.091  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 198 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.194  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 199 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.296  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 200 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.396  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 201 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.499  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 202 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.601  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 203 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.704  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 204 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.813  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 205 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:32.919  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 206 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.022  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 207 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.127  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 208 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.228  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 209 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.330  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 210 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.433  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 211 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.536  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 212 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.638  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 213 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.741  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 214 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.843  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 215 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:33.947  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 216 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.050  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 217 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.155  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 218 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.257  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 219 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.357  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 220 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.461  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 221 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.562  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 222 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.664  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 223 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.766  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 224 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.868  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 225 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:34.972  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 226 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.073  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 227 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.175  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 228 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.277  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 229 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.377  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 230 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.480  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 231 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.582  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 232 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.685  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 233 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.790  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 234 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.893  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 235 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:35.995  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 236 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.101  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 237 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.205  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 238 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.307  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 239 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.410  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 240 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.512  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 241 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.613  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 242 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.715  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 243 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.820  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 244 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:36.922  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 245 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.025  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 246 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.128  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 247 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.230  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 248 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.331  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 249 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.436  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 250 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.539  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 251 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.642  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 252 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.743  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 253 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.846  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 254 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:37.950  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 255 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.051  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 256 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.154  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 257 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.271  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 258 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.373  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 259 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.475  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 260 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.577  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 261 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.678  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 262 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.779  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 263 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.882  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 264 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:38.984  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 265 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.094  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 266 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.195  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 267 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.296  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 268 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.398  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 269 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.499  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 270 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.601  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 271 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.703  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 272 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.805  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 273 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:39.909  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 274 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.010  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 275 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.112  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 276 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.215  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 277 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.328  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 278 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.430  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 279 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.533  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 280 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.635  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 281 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.749  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 282 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.850  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 283 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:40.952  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 284 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.054  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 285 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.168  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 286 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.269  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 287 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.371  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 288 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.473  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 289 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.576  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 290 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.678  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 291 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.780  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 292 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.885  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 293 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:41.989  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 294 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.091  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 295 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.194  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 296 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.301  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 297 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.403  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 298 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.505  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 299 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.614  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 300 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.716  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 301 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.818  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 302 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:42.918  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 303 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.021  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 304 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.123  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 305 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.223  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 306 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.326  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 307 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.428  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 308 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.529  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 309 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.631  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 310 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.734  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 311 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.834  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 312 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:43.940  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 313 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.042  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 314 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.145  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 315 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.249  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 316 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.352  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 317 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.454  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 318 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.554  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 319 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.657  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 320 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.759  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 321 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.862  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 322 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:44.964  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 323 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:45.066  WARN 15632 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 324 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:18:45.157  INFO 15632 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:18:45.157  INFO 15632 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:18:45.159  INFO 15632 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:18:45.164  INFO 15632 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 22:18:45.170  INFO 15632 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:18:45.171  INFO 15632 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:18:45.171  INFO 15632 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:18:45.171  INFO 15632 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 22:19:55.194  INFO 20640 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 20640 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:19:55.198  INFO 20640 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:19:56.678  INFO 20640 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:19:56.694  INFO 20640 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:19:56.840  INFO 20640 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 22:19:57.504  INFO 20640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 22:19:57.516  INFO 20640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:19:57.517  INFO 20640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:19:57.684  INFO 20640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:19:57.685  INFO 20640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2421 ms
+2023-10-16 22:19:59.029  INFO 20640 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:20:00.472  INFO 20640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:20:00.546  INFO 20640 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:20:00.661  INFO 20640 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:20:00.661  INFO 20640 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:20:00.662  INFO 20640 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:20:00.698  INFO 20640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 22:20:01.907  INFO 20640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:20:01.936  INFO 20640 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 8.655 seconds (JVM running for 9.269)
+2023-10-16 22:20:03.136  INFO 20640 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:20:03.136  INFO 20640 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:20:03.137  INFO 20640 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-16 22:20:40.427  INFO 20640 --- [http-nio-8083-exec-6] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:20:40.470  INFO 20640 --- [http-nio-8083-exec-6] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 22:20:40.519  INFO 20640 --- [http-nio-8083-exec-6] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:20:40.535  INFO 20640 --- [http-nio-8083-exec-6] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:20:40.554  INFO 20640 --- [http-nio-8083-exec-6] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 22:20:40.630  INFO 20640 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:20:40.631  INFO 20640 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:20:40.631  INFO 20640 --- [http-nio-8083-exec-6] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697487640628
+2023-10-16 22:20:41.113  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.115  INFO 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: VnAxsynPS6OzCfqwwm_9qQ
+2023-10-16 22:20:41.117  INFO 20640 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 5 with epoch 0
+2023-10-16 22:20:41.226  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.327  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.429  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.534  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.636  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 8 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.739  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 9 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.842  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 10 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:41.946  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 11 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.053  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 12 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.154  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 13 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.255  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 14 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.358  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 15 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.467  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 16 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.570  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 17 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.672  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 18 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.774  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 19 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.876  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 20 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:42.981  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 21 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.083  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 22 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.184  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 23 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.286  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 24 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.388  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 25 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.490  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 26 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.592  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 27 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.695  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 28 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.797  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 29 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:43.899  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 30 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.009  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 31 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.118  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 32 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.229  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 33 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.331  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 34 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.434  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 35 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.537  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 36 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.638  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 37 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.740  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 38 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.841  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 39 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:44.947  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 40 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.049  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 41 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.152  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 42 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.256  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 43 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.359  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 44 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.474  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 45 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.578  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 46 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.690  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 47 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.792  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 48 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.896  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 49 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:45.997  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 50 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.099  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 51 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.203  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 52 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.304  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 53 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.407  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 54 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.508  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 55 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.621  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 56 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.724  WARN 20640 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 57 : {videos=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:20:46.748  INFO 20640 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:20:46.748  INFO 20640 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:20:46.749  INFO 20640 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:20:46.753  INFO 20640 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 22:20:46.762  INFO 20640 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:20:46.762  INFO 20640 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:20:46.763  INFO 20640 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:20:46.763  INFO 20640 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 22:25:33.368  INFO 21820 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 21820 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:25:33.375  INFO 21820 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:25:36.893  INFO 21820 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:25:36.939  INFO 21820 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:25:37.378  INFO 21820 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 22:25:40.293  INFO 21820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 22:25:40.336  INFO 21820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:25:40.336  INFO 21820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:25:41.358  INFO 21820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:25:41.361  INFO 21820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7844 ms
+2023-10-16 22:25:47.418  INFO 21820 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:25:49.352  INFO 21820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:25:49.524  INFO 21820 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:25:49.750  INFO 21820 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:25:49.751  INFO 21820 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:25:49.752  INFO 21820 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:25:49.831  INFO 21820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 22:25:51.907  INFO 21820 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:25:51.962  INFO 21820 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 21.762 seconds (JVM running for 23.064)
+2023-10-16 22:25:54.121  INFO 21820 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:25:54.122  INFO 21820 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:25:54.129  INFO 21820 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-16 22:28:35.681  INFO 21820 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:28:35.681  INFO 21820 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:28:35.684  INFO 21820 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:30:12.211  INFO 29912 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 29912 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:30:12.217  INFO 29912 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:30:13.985  INFO 29912 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:30:14.001  INFO 29912 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:30:14.150  INFO 29912 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 22:30:14.925  INFO 29912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 22:30:14.946  INFO 29912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:30:14.947  INFO 29912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:30:15.209  INFO 29912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:30:15.209  INFO 29912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2900 ms
+2023-10-16 22:30:17.466  INFO 29912 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:30:19.274  INFO 29912 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:30:19.520  INFO 29912 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:30:19.900  INFO 29912 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:30:19.903  INFO 29912 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:30:19.904  INFO 29912 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:30:19.989  INFO 29912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 22:30:21.569  INFO 29912 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:30:21.634  INFO 29912 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 11.133 seconds (JVM running for 11.662)
+2023-10-16 22:30:21.820  INFO 29912 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:30:21.821  INFO 29912 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:30:21.828  INFO 29912 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-16 22:33:58.533  INFO 29912 --- [http-nio-8083-exec-7] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:33:58.564  INFO 29912 --- [http-nio-8083-exec-7] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 22:33:58.601  INFO 29912 --- [http-nio-8083-exec-7] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:33:58.617  INFO 29912 --- [http-nio-8083-exec-7] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:33:58.635  INFO 29912 --- [http-nio-8083-exec-7] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 22:33:58.693  INFO 29912 --- [http-nio-8083-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:33:58.694  INFO 29912 --- [http-nio-8083-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:33:58.694  INFO 29912 --- [http-nio-8083-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697488438691
+2023-10-16 22:33:59.045  INFO 29912 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: eoxTNDwtREOgUzyYbfEViA
+2023-10-16 22:33:59.048  INFO 29912 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 4 with epoch 0
+2023-10-16 22:34:48.897  INFO 29912 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:34:48.898  INFO 29912 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:34:48.901  INFO 29912 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:34:48.913  INFO 29912 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 22:34:48.923  INFO 29912 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:34:48.924  INFO 29912 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:34:48.924  INFO 29912 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:34:48.924  INFO 29912 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-10-16 22:37:03.822  INFO 32756 --- [main] com.hiberus.VideoProducerApplication     : Starting VideoProducerApplication using Java 17.0.8 on HL-014830 with PID 32756 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-producer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:37:03.833  INFO 32756 --- [main] com.hiberus.VideoProducerApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:37:07.234  INFO 32756 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:37:07.276  INFO 32756 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:37:07.609  INFO 32756 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5928ac3a-e87d-3524-a148-dddefa2b6445
+2023-10-16 22:37:09.089  INFO 32756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2023-10-16 22:37:09.118  INFO 32756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:37:09.119  INFO 32756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:37:09.533  INFO 32756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:37:09.535  INFO 32756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5593 ms
+2023-10-16 22:37:12.904  INFO 32756 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:37:14.748  INFO 32756 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:37:14.944  INFO 32756 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:37:15.223  INFO 32756 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:37:15.226  INFO 32756 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:37:15.228  INFO 32756 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:37:15.280  INFO 32756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2023-10-16 22:37:15.901  INFO 32756 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:37:15.902  INFO 32756 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:37:15.907  INFO 32756 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-16 22:37:16.754  INFO 32756 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-10-16 22:37:16.807  INFO 32756 --- [main] com.hiberus.VideoProducerApplication     : Started VideoProducerApplication in 15.749 seconds (JVM running for 16.768)
+2023-10-16 22:38:56.986  INFO 32756 --- [http-nio-8083-exec-9] c.hiberus.service.impl.VideoServiceImpl  : [videoProducer] Sending video to topic videos
+2023-10-16 22:38:57.028  INFO 32756 --- [http-nio-8083-exec-9] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-10-16 22:38:57.067  INFO 32756 --- [http-nio-8083-exec-9] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:38:57.090  INFO 32756 --- [http-nio-8083-exec-9] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:38:57.107  INFO 32756 --- [http-nio-8083-exec-9] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-16 22:38:57.181  INFO 32756 --- [http-nio-8083-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:38:57.181  INFO 32756 --- [http-nio-8083-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:38:57.181  INFO 32756 --- [http-nio-8083-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697488737178
+2023-10-16 22:38:57.537  INFO 32756 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: xpQKQZ18T1mcVaW_gQ4EXg
+2023-10-16 22:38:57.539  INFO 32756 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 4 with epoch 0
+2023-10-16 22:39:36.929  INFO 32756 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:39:36.929  INFO 32756 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-producer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:39:36.930  INFO 32756 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:39:36.932  INFO 32756 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-10-16 22:39:36.938  INFO 32756 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:39:36.938  INFO 32756 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:39:36.938  INFO 32756 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:39:36.939  INFO 32756 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered

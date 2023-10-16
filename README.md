@@ -35,8 +35,6 @@
 3. Run the Sonarqube container: ``docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest``
 4. Start the microservices from the IDE
 
-**You can also run the tests of the different microservices**
-
 ## Documentation
 
 ### Prometheus
