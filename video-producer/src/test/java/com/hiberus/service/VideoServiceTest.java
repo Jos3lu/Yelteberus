@@ -23,7 +23,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
-import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -47,25 +47,37 @@ public class VideoServiceTest {
     KafkaTemplate<String, VideoValue> kafkaTemplateDQL;
 
     @InjectMocks
-    private VideoServiceImpl videoService;
-
-    private Video video = new Video("VIDEO-1", "CREATOR-1", "Video-1",
-            "02:23:12", LocalDate.parse("2018-07-12"), Format.MP4,
-            Arrays.asList(Category.ANIME), "Description of video");
+    VideoServiceImpl videoService;
 
     @Test
-    public void shouldCreateACreator(){
+    public void shouldCreateAVideo(){
+        // Given
+        Video video = Video.builder().videoIdentifier("VIDEO-1").creatorIdentifier("CREATOR-1")
+                .title("Video-1").duration("02:23:12").uploadDate(LocalDate.now()).format(Format.AVI)
+                .categories(List.of(Category.ANIME)).description("Description of video").build();
+        VideoValue videoValue = VideoValue.newBuilder().setVideoIdentifier("VIDEO-1").setTitle("Video-1")
+                .setDuration("02:23:12").setUploadDate(LocalDate.now()).setFormat(Format.AVI)
+                .setCategories(List.of(Category.ANIME)).setDescription("Description of video").build();
+
         // When
-        when(videoKafkaValueMapper.videoToVideoValue(any(Video.class))).thenReturn(new VideoValue());
+        when(videoKafkaValueMapper.videoToVideoValue(any(Video.class))).thenReturn(videoValue);
 
         // Then
         assertDoesNotThrow(() -> videoService.createVideo(video));
     }
 
     @Test
-    public void shouldUpdateCreator() {
+    public void shouldUpdateVideo() {
+        // Given
+        Video video = Video.builder().videoIdentifier("VIDEO-1").creatorIdentifier("CREATOR-1")
+                .title("Video-1.1").duration("02:23:12").uploadDate(LocalDate.now()).format(Format.MP4)
+                .categories(List.of(Category.ANIME, Category.ANIMATION)).description("Description of video").build();
+        VideoValue videoValue = VideoValue.newBuilder().setVideoIdentifier("VIDEO-1").setTitle("Video-1")
+                .setDuration("02:23:12").setUploadDate(LocalDate.now()).setFormat(Format.AVI)
+                .setCategories(List.of(Category.ANIME)).setDescription("Description of video").build();
+
         // When
-        when(videoKafkaValueMapper.videoToVideoValue(any(Video.class))).thenReturn(new VideoValue());
+        when(videoKafkaValueMapper.videoToVideoValue(any(Video.class))).thenReturn(videoValue);
         when(clientCreatorConsumer.getVideoCreator(anyString(), anyString()))
                 .thenReturn(new ResponseEntity<>(VideoResponseDto.builder().build(), HttpStatus.ACCEPTED));
 

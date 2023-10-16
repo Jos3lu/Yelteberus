@@ -1,0 +1,20 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: test-video-pcs
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: ${spring.application.name}
+      auto-offset-reset: earliest
+      key-deserializer: io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer
+      value-deserializer: io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer
+      properties:
+        schema.registry.url: mock://not-used
+    producer:
+      key-serializer: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerializer
+      value-serializer: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerializer
+      properties:
+        schema.registry.url: mock://not-used
