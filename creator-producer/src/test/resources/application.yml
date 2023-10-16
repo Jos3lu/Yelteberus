@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: creator-producer
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      properties:
+        auto-offset-reset: earliest
+        grupo-id: test-creator-producer
+        schema.registry.url: mock://not-used
