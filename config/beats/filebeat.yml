@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: filestream
+    id: app-logs
+    enabled: true
+    paths:
+      - '/var/log/app_logs/creator-producer/*.log'
+      - '/var/log/app_logs/video-producer/*.log'
+      - '/var/log/app_logs/video-pcs/*.log'
+      - '/var/log/app_logs/video-aggregator/*.log'
+      - '/var/log/app_logs/creator-video-mixbi/*.log'
+      - '/var/log/app_logs/creator-video-consumer/*.log'
+
+output.logstash:
+  hosts: ['${LOGSTASH_HOST:localhost:5085}']

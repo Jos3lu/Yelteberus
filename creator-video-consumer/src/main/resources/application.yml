@@ -45,3 +45,23 @@ spring:
               auto.register.schemas: true
               default.key.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
               default.value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+logging:
+  file:
+    path: './logs/${spring.application.name}'
+    name: ${logging.file.path}/my-app.log

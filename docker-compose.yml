@@ -80,6 +80,77 @@ services:
       - kafka
     restart: always
 
+  prometheus:
+    image: prom/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prom_data:/prometheus
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasource.yml
+
+  filebeat:
+    image: elastic/filebeat:7.17.8
+    user: root
+    container_name: filebeat
+    command:
+      - "-e"
+      - "--strict.perms=false"
+    volumes:
+      - ./config/beats/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./logs:/var/log/app_logs
+    environment:
+      LOGSTASH_HOST: logstash:5085
+    depends_on:
+      - logstash
+
+  logstash:
+    image: logstash:7.17.8
+    container_name: logstash
+    ports:
+      - "9600:9600"
+      - "5085:5085" # Puerto Beats
+    environment:
+      ELASTICSEARCH_HOST: elasticsearch:9200
+    volumes:
+      - ./config/logstash/app-logs.conf:/usr/share/logstash/pipeline/app-logs.conf:ro
+      - ./config/logstash/templates:/usr/share/logstash/templates
+
+  elasticsearch:
+    image: elasticsearch:7.17.8
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data
+
+  kibana:
+    image: kibana:7.17.8
+    container_name: kibana
+    ports:
+      - "5601:5601"
+
   yelteberus-db:
     image: postgres:14.1-alpine
     container_name: yelteberus-db
@@ -94,6 +165,8 @@ services:
 
 volumes:
   db:
+  prom_data:
+  elasticsearch:
 
 networks:
   default:

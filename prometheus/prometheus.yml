@@ -1,0 +1,38 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+
+  - job_name: "creator-producer"
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ["172.22.112.1:8082"]
+
+  - job_name: "video-producer"
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ "172.22.112.1:8083" ]
+
+  - job_name: "video-pcs"
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ "172.22.112.1:8084" ]
+
+  - job_name: "video-aggregator"
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ "172.22.112.1:8085" ]
+
+  - job_name: "creator-video-mixbi"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["172.22.112.1:8086"]
+
+  - job_name: "creator-video-consumer"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["172.22.112.1:8087"]
