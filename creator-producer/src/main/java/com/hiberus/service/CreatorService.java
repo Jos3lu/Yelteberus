@@ -1,6 +1,5 @@
 package com.hiberus.service;
 
-import com.hiberus.dto.CreatorRequestDto;
 import com.hiberus.dto.CreatorResponseDto;
 import com.hiberus.exception.CreatorNotFoundException;
 import com.hiberus.exception.CreatorNotValidException;

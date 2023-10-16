@@ -4,7 +4,6 @@ import com.hiberus.dto.VideoResponseDto;
 import com.hiberus.exception.VideoNotFoundException;
 import com.hiberus.exception.VideoNotValidException;
 import com.hiberus.model.Video;
-import org.springframework.web.bind.annotation.PathVariable;
 
 public interface VideoService {
 
