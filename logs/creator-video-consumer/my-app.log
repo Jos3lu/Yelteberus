@@ -5798,3 +5798,1406 @@ fbddd3c4-9627-4737-b21d-558f2dd0408f=[activeTasks: ([0_0]) standbyTasks: ([])].
 2023-10-16 22:39:36.774  INFO 38348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-16 22:39:36.779  INFO 38348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-10-16 22:39:36.788  INFO 38348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-16 22:52:23.834  INFO 36172 --- [main] c.h.CreatorVideoConsumerApplication      : Starting CreatorVideoConsumerApplication using Java 17.0.8 on HL-014830 with PID 36172 (C:\Users\jlsierra\University_Microservicios\yelteberus\creator-video-consumer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:52:23.840  INFO 36172 --- [main] c.h.CreatorVideoConsumerApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:52:25.687  INFO 36172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-16 22:52:25.899  INFO 36172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194 ms. Found 1 JPA repository interfaces.
+2023-10-16 22:52:26.136  INFO 36172 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:52:26.156  INFO 36172 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:52:27.227  INFO 36172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2023-10-16 22:52:27.242  INFO 36172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:52:27.244  INFO 36172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:52:27.429  INFO 36172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:52:27.429  INFO 36172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3508 ms
+2023-10-16 22:52:27.849  INFO 36172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-16 22:52:27.954  INFO 36172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-16 22:52:28.198  INFO 36172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-16 22:52:28.371  INFO 36172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-16 22:52:28.650  INFO 36172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-16 22:52:28.671  INFO 36172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-10-16 22:52:29.948  INFO 36172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-16 22:52:29.958  INFO 36172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-16 22:52:30.439  WARN 36172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-16 22:52:31.176  INFO 36172 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 22:52:31.498  INFO 36172 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:31.518  INFO 36172 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:31.518  INFO 36172 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Key Serde used for process-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:31.519  INFO 36172 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:31.519  INFO 36172 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:31.519  INFO 36172 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Value Serde used for process-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:31.530  INFO 36172 --- [main] .k.s.AbstractKafkaStreamsBinderProcessor : Native decoding is enabled for process-in-0. Inbound deserialization done at the broker.
+2023-10-16 22:52:31.539  INFO 36172 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:52:31.658  INFO 36172 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:52:31.658  INFO 36172 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-video-consumer.errorChannel' has 1 subscriber(s).
+2023-10-16 22:52:31.658  INFO 36172 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:52:32.115  INFO 36172 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 22:52:32.217  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:32.217  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:32.217  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489552215
+2023-10-16 22:52:32.644  INFO 36172 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-10-16 22:52:32.656  INFO 36172 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:32.656  INFO 36172 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:32.656  INFO 36172 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:32.675  INFO 36172 --- [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = creator-video-consumer
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 100
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-10-16 22:52:32.698  INFO 36172 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 22:52:32.711  WARN 36172 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:32.711  WARN 36172 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:32.712  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:32.712  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:32.712  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489552712
+2023-10-16 22:52:32.715  INFO 36172 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] Kafka Streams version: 3.1.2
+2023-10-16 22:52:32.716  INFO 36172 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] Kafka Streams commit ID: f8c67dc3ae0a3265
+2023-10-16 22:52:32.728  INFO 36172 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Creating restore consumer client
+2023-10-16 22:52:32.735  INFO 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 22:52:32.778  WARN 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:32.778  WARN 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:32.778  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:32.778  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:32.778  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489552778
+2023-10-16 22:52:32.787  INFO 36172 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Creating thread producer client
+2023-10-16 22:52:32.794  INFO 36172 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-10-16 22:52:32.812  INFO 36172 --- [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] Instantiated an idempotent producer.
+2023-10-16 22:52:32.837  WARN 36172 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:32.837  WARN 36172 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:32.837  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:32.838  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:32.838  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489552837
+2023-10-16 22:52:32.848  INFO 36172 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Creating consumer client
+2023-10-16 22:52:32.852  INFO 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = creator-video-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 22:52:32.857  INFO 36172 --- [kafka-producer-network-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] Cluster ID: lbUjHNy0RMeo_r_GCg80HA
+2023-10-16 22:52:32.858  INFO 36172 --- [kafka-producer-network-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] ProducerId set to 2 with epoch 0
+2023-10-16 22:52:32.870  INFO 36172 --- [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-10-16 22:52:32.892  WARN 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:32.892  WARN 36172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:32.892  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:32.892  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:32.892  INFO 36172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489552892
+2023-10-16 22:52:32.902  INFO 36172 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] State transition from CREATED to REBALANCING
+2023-10-16 22:52:32.904  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Starting
+2023-10-16 22:52:32.904  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] State transition from CREATED to STARTING
+2023-10-16 22:52:32.905  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Subscribed to topic(s): creators-videos
+2023-10-16 22:52:32.924  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Cluster ID: lbUjHNy0RMeo_r_GCg80HA
+2023-10-16 22:52:32.925  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-10-16 22:52:32.928  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] (Re-)joining group
+2023-10-16 22:52:32.942  INFO 36172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2023-10-16 22:52:32.962  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Request joining group due to: need to re-join with the given member-id
+2023-10-16 22:52:32.963  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] (Re-)joining group
+2023-10-16 22:52:32.972  INFO 36172 --- [main] c.h.CreatorVideoConsumerApplication      : Started CreatorVideoConsumerApplication in 10.07 seconds (JVM running for 10.764)
+2023-10-16 22:52:32.974  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Successfully joined group with generation Generation{generationId=1, memberId='creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084', protocol='stream'}
+2023-10-16 22:52:32.989  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] All members participating in this rebalance: 
+0fe20062-b25d-400e-b01a-8fd08aa578ec: [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084].
+2023-10-16 22:52:32.998  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {0fe20062-b25d-400e-b01a-8fd08aa578ec=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-10-16 22:52:32.998  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+0fe20062-b25d-400e-b01a-8fd08aa578ec=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-10-16 22:52:33.003  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] Client 0fe20062-b25d-400e-b01a-8fd08aa578ec per-consumer assignment:
+	prev owned active {}
+	prev owned standby {creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084=[]}
+	assigned active {creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 22:52:33.003  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 22:52:33.004  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Finished assignment for group at generation 1: {creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084=Assignment(partitions=[creators-videos-0], userDataSize=52)}
+2023-10-16 22:52:33.010  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-10-16 22:52:33.012  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Successfully synced group in generation Generation{generationId=1, memberId='creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer-2302733a-cabe-4a54-befc-18d683e2e084', protocol='stream'}
+2023-10-16 22:52:33.013  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Updating assignment with
+	Assigned partitions:                       [creators-videos-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [creators-videos-0]
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 22:52:33.013  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Notifying assignor about the new Assignment(partitions=[creators-videos-0], userDataSize=52)
+2023-10-16 22:52:33.014  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 22:52:33.015  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-10-16 22:52:33.038  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Adding newly assigned partitions: creators-videos-0
+2023-10-16 22:52:33.039  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-10-16 22:52:33.047  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Found no committed offset for partition creators-videos-0
+2023-10-16 22:52:33.072  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Resetting offset for partition creators-videos-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 22:52:33.121  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Initialized
+2023-10-16 22:52:33.132  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Found no committed offset for partition creators-videos-0
+2023-10-16 22:52:33.139  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Restored and ready to run
+2023-10-16 22:52:33.141  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Restoration took 102 ms for all tasks [0_0]
+2023-10-16 22:52:33.142  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-10-16 22:52:33.145  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] State transition from REBALANCING to RUNNING
+2023-10-16 22:52:33.145  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer, groupId=creator-video-consumer] Requesting the log end offset for creators-videos-0 in order to compute lag
+2023-10-16 22:52:35.997  INFO 36172 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:52:35.998  INFO 36172 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:52:36.002  INFO 36172 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-16 22:52:48.078  INFO 36172 --- [http-nio-8087-exec-4] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 22:52:59.622  INFO 36172 --- [http-nio-8087-exec-6] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 22:54:21.217  INFO 36172 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 22:54:21.219  INFO 36172 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Informed to shut down
+2023-10-16 22:54:21.220  INFO 36172 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 22:54:21.316  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Shutting down
+2023-10-16 22:54:21.323  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Suspended RUNNING
+2023-10-16 22:54:21.323  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Suspended running
+2023-10-16 22:54:21.330  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 22:54:21.331  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Closing record collector clean
+2023-10-16 22:54:21.331  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] task [0_0] Closed clean
+2023-10-16 22:54:21.332  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-10-16 22:54:21.337  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.337  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.338  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.338  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-producer unregistered
+2023-10-16 22:54:21.341  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 22:54:21.342  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.343  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.343  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.348  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-consumer unregistered
+2023-10-16 22:54:21.349  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.349  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.349  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.354  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1-restore-consumer unregistered
+2023-10-16 22:54:21.356  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-10-16 22:54:21.356  INFO 36172 --- [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-StreamThread-1] Shutdown complete
+2023-10-16 22:54:21.357  INFO 36172 --- [kafka-admin-client-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin unregistered
+2023-10-16 22:54:21.362  INFO 36172 --- [kafka-admin-client-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.362  INFO 36172 --- [kafka-admin-client-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.362  INFO 36172 --- [kafka-admin-client-thread | creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec-admin] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.363  INFO 36172 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.364  INFO 36172 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.364  INFO 36172 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.364  INFO 36172 --- [kafka-streams-close-thread] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-10-16 22:54:21.365  INFO 36172 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-0fe20062-b25d-400e-b01a-8fd08aa578ec] Streams client stopped completely
+2023-10-16 22:54:21.366  INFO 36172 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:54:21.366  INFO 36172 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-video-consumer.errorChannel' has 0 subscriber(s).
+2023-10-16 22:54:21.367  INFO 36172 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:54:21.377  INFO 36172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-16 22:54:21.386  INFO 36172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-16 22:54:21.398  INFO 36172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-16 23:12:49.577  INFO 26360 --- [main] c.h.CreatorVideoConsumerApplication      : Starting CreatorVideoConsumerApplication using Java 17.0.8 on HL-014830 with PID 26360 (C:\Users\jlsierra\University_Microservicios\yelteberus\creator-video-consumer\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 23:12:49.593  INFO 26360 --- [main] c.h.CreatorVideoConsumerApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 23:12:51.755  INFO 26360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-16 23:12:51.925  INFO 26360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interfaces.
+2023-10-16 23:12:52.137  INFO 26360 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 23:12:52.159  INFO 26360 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 23:12:53.194  INFO 26360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2023-10-16 23:12:53.215  INFO 26360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 23:12:53.216  INFO 26360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 23:12:53.562  INFO 26360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 23:12:53.563  INFO 26360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3775 ms
+2023-10-16 23:12:53.991  INFO 26360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-16 23:12:54.085  INFO 26360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-16 23:12:54.350  INFO 26360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-16 23:12:54.516  INFO 26360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-16 23:12:54.730  INFO 26360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-16 23:12:54.749  INFO 26360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-10-16 23:12:55.932  INFO 26360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-16 23:12:55.941  INFO 26360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-16 23:12:56.425  WARN 26360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-16 23:12:57.203  INFO 26360 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function '' with acceptedOutputTypes: []
+2023-10-16 23:12:57.510  INFO 26360 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:12:57.523  INFO 26360 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:12:57.523  INFO 26360 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Key Serde used for process-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:12:57.523  INFO 26360 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:12:57.524  INFO 26360 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:12:57.524  INFO 26360 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Value Serde used for process-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:12:57.532  INFO 26360 --- [main] .k.s.AbstractKafkaStreamsBinderProcessor : Native decoding is enabled for process-in-0. Inbound deserialization done at the broker.
+2023-10-16 23:12:57.541  INFO 26360 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-10-16 23:12:57.665  INFO 26360 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 23:12:57.666  INFO 26360 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-video-consumer.errorChannel' has 1 subscriber(s).
+2023-10-16 23:12:57.666  INFO 26360 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 23:12:58.130  INFO 26360 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 23:12:58.238  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:12:58.239  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:12:58.239  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490778237
+2023-10-16 23:12:58.621  INFO 26360 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-10-16 23:12:58.631  INFO 26360 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:12:58.632  INFO 26360 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:12:58.632  INFO 26360 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:12:58.650  INFO 26360 --- [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = creator-video-consumer
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 100
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-10-16 23:12:58.669  INFO 26360 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 23:12:58.678  WARN 26360 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:12:58.679  WARN 26360 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:12:58.679  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:12:58.679  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:12:58.679  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490778679
+2023-10-16 23:12:58.682  INFO 26360 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] Kafka Streams version: 3.1.2
+2023-10-16 23:12:58.683  INFO 26360 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] Kafka Streams commit ID: f8c67dc3ae0a3265
+2023-10-16 23:12:58.697  INFO 26360 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Creating restore consumer client
+2023-10-16 23:12:58.702  INFO 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 23:12:58.734  WARN 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:12:58.735  WARN 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:12:58.735  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:12:58.735  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:12:58.735  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490778735
+2023-10-16 23:12:58.744  INFO 26360 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Creating thread producer client
+2023-10-16 23:12:58.751  INFO 26360 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-10-16 23:12:58.763  INFO 26360 --- [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] Instantiated an idempotent producer.
+2023-10-16 23:12:58.797  WARN 26360 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:12:58.798  WARN 26360 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:12:58.798  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:12:58.798  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:12:58.799  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490778798
+2023-10-16 23:12:58.808  INFO 26360 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Creating consumer client
+2023-10-16 23:12:58.812  INFO 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = creator-video-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 23:12:58.813  INFO 26360 --- [kafka-producer-network-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] Cluster ID: S-mq1eDHR_KlGC89FCOvDA
+2023-10-16 23:12:58.814  INFO 26360 --- [kafka-producer-network-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] ProducerId set to 5 with epoch 0
+2023-10-16 23:12:58.827  INFO 26360 --- [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-10-16 23:12:58.852  WARN 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:12:58.852  WARN 26360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:12:58.852  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:12:58.853  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:12:58.853  INFO 26360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490778852
+2023-10-16 23:12:58.867  INFO 26360 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] State transition from CREATED to REBALANCING
+2023-10-16 23:12:58.869  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Starting
+2023-10-16 23:12:58.869  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] State transition from CREATED to STARTING
+2023-10-16 23:12:58.871  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Subscribed to topic(s): creators-videos
+2023-10-16 23:12:58.890  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Cluster ID: S-mq1eDHR_KlGC89FCOvDA
+2023-10-16 23:12:58.891  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-10-16 23:12:58.895  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] (Re-)joining group
+2023-10-16 23:12:58.934  INFO 26360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2023-10-16 23:12:58.972  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Request joining group due to: need to re-join with the given member-id
+2023-10-16 23:12:58.974  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] (Re-)joining group
+2023-10-16 23:12:58.979  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-10-16 23:12:58.987  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Successfully joined group with generation Generation{generationId=1, memberId='creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3', protocol='stream'}
+2023-10-16 23:12:59.007  INFO 26360 --- [main] c.h.CreatorVideoConsumerApplication      : Started CreatorVideoConsumerApplication in 11.352 seconds (JVM running for 12.571)
+2023-10-16 23:12:59.016  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] All members participating in this rebalance: 
+958f2658-8242-49fa-827e-0e289a98a38d: [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3].
+2023-10-16 23:12:59.048  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {958f2658-8242-49fa-827e-0e289a98a38d=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-10-16 23:12:59.049  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+958f2658-8242-49fa-827e-0e289a98a38d=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-10-16 23:12:59.066  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] Client 958f2658-8242-49fa-827e-0e289a98a38d per-consumer assignment:
+	prev owned active {}
+	prev owned standby {creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3=[]}
+	assigned active {creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 23:12:59.066  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 23:12:59.068  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Finished assignment for group at generation 1: {creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3=Assignment(partitions=[creators-videos-0], userDataSize=52)}
+2023-10-16 23:12:59.127  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Successfully synced group in generation Generation{generationId=1, memberId='creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer-4be5bb28-8f5b-4c85-8353-ea34c307b6c3', protocol='stream'}
+2023-10-16 23:12:59.129  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Updating assignment with
+	Assigned partitions:                       [creators-videos-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [creators-videos-0]
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 23:12:59.130  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Notifying assignor about the new Assignment(partitions=[creators-videos-0], userDataSize=52)
+2023-10-16 23:12:59.133  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 23:12:59.140  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-10-16 23:12:59.187  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Adding newly assigned partitions: creators-videos-0
+2023-10-16 23:12:59.188  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-10-16 23:12:59.204  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Found no committed offset for partition creators-videos-0
+2023-10-16 23:12:59.232  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Initialized
+2023-10-16 23:12:59.242  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Found no committed offset for partition creators-videos-0
+2023-10-16 23:12:59.250  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Restored and ready to run
+2023-10-16 23:12:59.253  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Restoration took 63 ms for all tasks [0_0]
+2023-10-16 23:12:59.254  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-10-16 23:12:59.260  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] State transition from REBALANCING to RUNNING
+2023-10-16 23:12:59.261  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Requesting the log end offset for creators-videos-0 in order to compute lag
+2023-10-16 23:12:59.279  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer, groupId=creator-video-consumer] Resetting offset for partition creators-videos-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 23:12:59.405  INFO 26360 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 23:12:59.405  INFO 26360 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 23:12:59.407  INFO 26360 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-16 23:12:59.623  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-123"}
+2023-10-16 23:12:59.625  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:12:59.796  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-123"}
+2023-10-16 23:12:59.796  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:13:13.390  INFO 26360 --- [http-nio-8087-exec-4] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:13:40.410  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-123"}
+2023-10-16 23:13:40.411  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:13:41.240  INFO 26360 --- [http-nio-8087-exec-7] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:13:55.204  INFO 26360 --- [http-nio-8087-exec-9] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:13:55.560  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-1234"}
+2023-10-16 23:13:55.561  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:14:00.290  INFO 26360 --- [http-nio-8087-exec-10] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:14:13.605  INFO 26360 --- [http-nio-8087-exec-2] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-123
+2023-10-16 23:14:30.860  INFO 26360 --- [http-nio-8087-exec-4] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching video VIDEO-1 of creator CREATOR-123
+2023-10-16 23:14:30.861  INFO 26360 --- [http-nio-8087-exec-4] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-123
+2023-10-16 23:14:42.795  INFO 26360 --- [http-nio-8087-exec-6] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching video VIDEO-1 of creator CREATOR-123
+2023-10-16 23:14:42.796  INFO 26360 --- [http-nio-8087-exec-6] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-123
+2023-10-16 23:14:45.716  INFO 26360 --- [http-nio-8087-exec-7] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-123
+2023-10-16 23:14:45.957  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-123"}
+2023-10-16 23:14:45.958  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:14:59.034  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Processed 5 total records, ran 0 punctuators, and committed 5 total tasks since the last update
+2023-10-16 23:15:10.008  INFO 26360 --- [http-nio-8087-exec-10] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-123
+2023-10-16 23:15:23.264  INFO 26360 --- [http-nio-8087-exec-2] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-1234
+2023-10-16 23:15:26.244  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-1234"}
+2023-10-16 23:15:26.244  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Saving creator
+2023-10-16 23:15:27.651  INFO 26360 --- [http-nio-8087-exec-3] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Searching creator CREATOR-1234
+2023-10-16 23:15:36.335  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-1234"}
+2023-10-16 23:15:36.336  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Deleting creator
+2023-10-16 23:15:36.963  INFO 26360 --- [http-nio-8087-exec-4] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:16:06.717  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] com.hiberus.listener.CreatorListener     : Received creator with key: {"creator_identifier": "CREATOR-123"}
+2023-10-16 23:16:06.717  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Deleting creator
+2023-10-16 23:16:10.877  INFO 26360 --- [http-nio-8087-exec-9] c.h.service.impl.CreatorServiceImpl      : [CreatorVideoConsumer] Sending all the saved creators
+2023-10-16 23:16:59.053  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Processed 3 total records, ran 0 punctuators, and committed 3 total tasks since the last update
+2023-10-16 23:17:20.418  INFO 26360 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 23:17:20.421  INFO 26360 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Informed to shut down
+2023-10-16 23:17:20.422  INFO 26360 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 23:17:20.477  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Shutting down
+2023-10-16 23:17:20.483  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Suspended RUNNING
+2023-10-16 23:17:20.483  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Suspended running
+2023-10-16 23:17:20.487  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 23:17:20.488  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Closing record collector clean
+2023-10-16 23:17:20.488  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] task [0_0] Closed clean
+2023-10-16 23:17:20.490  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-10-16 23:17:20.496  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.496  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.497  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.497  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-producer unregistered
+2023-10-16 23:17:20.499  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 23:17:20.500  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.501  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.501  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.509  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-consumer unregistered
+2023-10-16 23:17:20.510  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.510  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.510  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.513  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1-restore-consumer unregistered
+2023-10-16 23:17:20.515  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-10-16 23:17:20.515  INFO 26360 --- [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-StreamThread-1] Shutdown complete
+2023-10-16 23:17:20.516  INFO 26360 --- [kafka-admin-client-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin unregistered
+2023-10-16 23:17:20.520  INFO 26360 --- [kafka-admin-client-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.521  INFO 26360 --- [kafka-admin-client-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.521  INFO 26360 --- [kafka-admin-client-thread | creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d-admin] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.521  INFO 26360 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.522  INFO 26360 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.522  INFO 26360 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.522  INFO 26360 --- [kafka-streams-close-thread] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-10-16 23:17:20.522  INFO 26360 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [creator-video-consumer-958f2658-8242-49fa-827e-0e289a98a38d] Streams client stopped completely
+2023-10-16 23:17:20.524  INFO 26360 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 23:17:20.524  INFO 26360 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'creator-video-consumer.errorChannel' has 0 subscriber(s).
+2023-10-16 23:17:20.525  INFO 26360 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 23:17:20.531  INFO 26360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-16 23:17:20.535  INFO 26360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-16 23:17:20.546  INFO 26360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -13827,3 +13827,2208 @@ Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientEx
 2023-10-16 22:39:36.813  INFO 25776 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
 2023-10-16 22:39:36.814  INFO 25776 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-aggregator.errorChannel' has 0 subscriber(s).
 2023-10-16 22:39:36.814  INFO 25776 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:51:59.387  INFO 17204 --- [main] com.hiberus.VideoAggregatorApplication   : Starting VideoAggregatorApplication using Java 17.0.8 on HL-014830 with PID 17204 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-aggregator\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 22:51:59.393  INFO 17204 --- [main] com.hiberus.VideoAggregatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 22:52:00.932  INFO 17204 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 22:52:00.944  INFO 17204 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 22:52:01.791  INFO 17204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-10-16 22:52:01.801  INFO 17204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 22:52:01.801  INFO 17204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 22:52:01.958  INFO 17204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 22:52:01.959  INFO 17204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2501 ms
+2023-10-16 22:52:03.524  INFO 17204 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function 'aggregateVideos' with acceptedOutputTypes: []
+2023-10-16 22:52:03.896  INFO 17204 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:03.914  INFO 17204 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:03.914  INFO 17204 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Key Serde used for aggregateVideos-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:03.914  INFO 17204 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:03.915  INFO 17204 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:03.915  INFO 17204 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Value Serde used for aggregateVideos-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:03.927  INFO 17204 --- [main] .k.s.AbstractKafkaStreamsBinderProcessor : Native decoding is enabled for aggregateVideos-in-0. Inbound deserialization done at the broker.
+2023-10-16 22:52:03.971  INFO 17204 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-10-16 22:52:04.098  INFO 17204 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:52:04.099  INFO 17204 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-aggregator.errorChannel' has 1 subscriber(s).
+2023-10-16 22:52:04.101  INFO 17204 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 22:52:04.648  INFO 17204 --- [main] o.s.c.s.b.k.p.KafkaTopicProvisioner      : Using kafka topic for outbound: videos-aggregator
+2023-10-16 22:52:04.656  INFO 17204 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 22:52:04.794  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:04.797  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:04.798  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489524792
+2023-10-16 22:52:05.292  INFO 17204 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-10-16 22:52:05.305  INFO 17204 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:05.305  INFO 17204 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:05.306  INFO 17204 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:05.311  INFO 17204 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:05.312  INFO 17204 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:05.313  INFO 17204 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Key Serde used for (outbound) videos-aggregator: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:05.314  INFO 17204 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:05.314  INFO 17204 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:05.315  INFO 17204 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Value Serde used for (outbound) videos-aggregator: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 22:52:05.315  INFO 17204 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Native encoding is enabled for videos-aggregator. Outbound serialization done at the broker.
+2023-10-16 22:52:05.345  INFO 17204 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 22:52:05.357  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:05.357  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:05.358  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489525357
+2023-10-16 22:52:05.440  INFO 17204 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2023-10-16 22:52:05.445  INFO 17204 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:05.446  INFO 17204 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:05.446  INFO 17204 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:05.472  INFO 17204 --- [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = video-aggregator
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 100
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-10-16 22:52:05.516  WARN 17204 --- [main] o.a.k.s.p.internals.StateDirectory       : Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams]
+2023-10-16 22:52:05.517 ERROR 17204 --- [main] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\jlsierra\AppData\Local\Temp\kafka-streams
+2023-10-16 22:52:05.517 ERROR 17204 --- [main] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\jlsierra\AppData\Local\Temp\kafka-streams\video-aggregator
+2023-10-16 22:52:05.617  INFO 17204 --- [main] o.a.k.s.p.internals.StateDirectory       : Reading UUID from process file: 44b25ab0-b5f0-4e42-add3-67b7b992052a
+2023-10-16 22:52:05.629  INFO 17204 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 22:52:05.634  WARN 17204 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:05.635  WARN 17204 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:05.635  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:05.635  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:05.635  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489525635
+2023-10-16 22:52:05.638  INFO 17204 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Kafka Streams version: 3.1.2
+2023-10-16 22:52:05.638  INFO 17204 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Kafka Streams commit ID: f8c67dc3ae0a3265
+2023-10-16 22:52:05.655  INFO 17204 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating restore consumer client
+2023-10-16 22:52:05.661  INFO 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 22:52:05.700  WARN 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:05.701  WARN 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:05.701  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:05.701  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:05.701  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489525701
+2023-10-16 22:52:05.713  INFO 17204 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating thread producer client
+2023-10-16 22:52:05.720  INFO 17204 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-10-16 22:52:05.747  INFO 17204 --- [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Instantiated an idempotent producer.
+2023-10-16 22:52:05.774  WARN 17204 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:05.775  WARN 17204 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:05.775  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:05.776  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:05.776  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489525775
+2023-10-16 22:52:05.785  INFO 17204 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating consumer client
+2023-10-16 22:52:05.790  INFO 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = video-aggregator
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 22:52:05.797  INFO 17204 --- [kafka-producer-network-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Cluster ID: lbUjHNy0RMeo_r_GCg80HA
+2023-10-16 22:52:05.804  INFO 17204 --- [kafka-producer-network-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] ProducerId set to 0 with epoch 0
+2023-10-16 22:52:05.813  INFO 17204 --- [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-10-16 22:52:05.838  WARN 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 22:52:05.838  WARN 17204 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 22:52:05.842  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 22:52:05.843  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 22:52:05.843  INFO 17204 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697489525842
+2023-10-16 22:52:05.856  INFO 17204 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from CREATED to REBALANCING
+2023-10-16 22:52:05.858  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Starting
+2023-10-16 22:52:05.858  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from CREATED to STARTING
+2023-10-16 22:52:05.860  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Subscribed to topic(s): video-aggregator-VIDEO_AGGREGATOR-repartition, videos-pcs
+2023-10-16 22:52:05.881  WARN 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Error while fetching metadata with correlation id 2 : {video-aggregator-VIDEO_AGGREGATOR-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:52:05.882  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Cluster ID: lbUjHNy0RMeo_r_GCg80HA
+2023-10-16 22:52:05.883  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-10-16 22:52:05.887  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 22:52:05.906  INFO 17204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-10-16 22:52:05.943  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Request joining group due to: need to re-join with the given member-id
+2023-10-16 22:52:05.944  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 22:52:05.947  INFO 17204 --- [main] com.hiberus.VideoAggregatorApplication   : Started VideoAggregatorApplication in 7.233 seconds (JVM running for 7.781)
+2023-10-16 22:52:05.953  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully joined group with generation Generation{generationId=1, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314', protocol='stream'}
+2023-10-16 22:52:06.006  WARN 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Error while fetching metadata with correlation id 7 : {video-aggregator-VIDEO_AGGREGATOR-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 22:52:06.140  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] All members participating in this rebalance: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a: [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314].
+2023-10-16 22:52:06.152  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([1_0]) changelogOffsetTotalsByTask: ([1_0=0]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2023-10-16 22:52:06.153  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Assigned tasks [1_0, 0_0] including stateful [1_0] to clients as: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([])].
+2023-10-16 22:52:06.162  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Client 44b25ab0-b5f0-4e42-add3-67b7b992052a per-consumer assignment:
+	prev owned active {}
+	prev owned standby {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=[1_0]}
+	assigned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=[1_0, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 22:52:06.162  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 22:52:06.163  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Finished assignment for group at generation 1: {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)}
+2023-10-16 22:52:06.173  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-10-16 22:52:06.176  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully synced group in generation Generation{generationId=1, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314', protocol='stream'}
+2023-10-16 22:52:06.177  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Request joining group due to: cached metadata has changed from (version3: {videos-pcs=1}) at the beginning of the rebalance to (version4: {videos-pcs=1, video-aggregator-VIDEO_AGGREGATOR-repartition=1})
+2023-10-16 22:52:06.177  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Updating assignment with
+	Assigned partitions:                       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 22:52:06.178  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Notifying assignor about the new Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)
+2023-10-16 22:52:06.179  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 22:52:06.181  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-10-16 22:52:06.210  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Adding newly assigned partitions: videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 22:52:06.211  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-10-16 22:52:06.213  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 22:52:06.219  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully joined group with generation Generation{generationId=2, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314', protocol='stream'}
+2023-10-16 22:52:06.236  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] All members participating in this rebalance: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a: [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314].
+2023-10-16 22:52:06.237  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([0_0, 1_0]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([1_0=0]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2023-10-16 22:52:06.237  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Assigned tasks [1_0, 0_0] including stateful [1_0] to clients as: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([])].
+2023-10-16 22:52:06.237  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Client 44b25ab0-b5f0-4e42-add3-67b7b992052a per-consumer assignment:
+	prev owned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=[1_0, 0_0]}
+	prev owned standby {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=[]}
+	assigned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=[1_0, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 22:52:06.238  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 22:52:06.238  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Finished assignment for group at generation 2: {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314=Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)}
+2023-10-16 22:52:06.243  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully synced group in generation Generation{generationId=2, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-dbd9e6ff-764b-4d0b-a5bf-ca778f8d5314', protocol='stream'}
+2023-10-16 22:52:06.244  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Updating assignment with
+	Assigned partitions:                       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Current owned partitions:                  [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 22:52:06.244  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Notifying assignor about the new Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)
+2023-10-16 22:52:06.244  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 22:52:06.245  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_0]
+	New standby tasks: []
+	Existing active tasks: [1_0, 0_0]
+	Existing standby tasks: []
+2023-10-16 22:52:06.246  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Adding newly assigned partitions: 
+2023-10-16 22:52:06.247  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PARTITIONS_ASSIGNED to PARTITIONS_ASSIGNED
+2023-10-16 22:52:06.256  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition videos-pcs-0
+2023-10-16 22:52:06.257  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 22:52:06.267  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Resetting offset for partition videos-pcs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 22:52:06.269  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Resetting offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 22:52:06.287  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Initialized
+2023-10-16 22:52:06.291  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.291  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.294  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.295  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.578  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.s.i.RocksDBTimestampedStore      : Opening store VIDEO_AGGREGATOR in regular mode
+2023-10-16 22:52:06.588  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Initialized
+2023-10-16 22:52:06.593  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition videos-pcs-0
+2023-10-16 22:52:06.596  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.597  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.597  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.597  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.597  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Restored and ready to run
+2023-10-16 22:52:06.604  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): video-aggregator-VIDEO_AGGREGATOR-changelog-0
+2023-10-16 22:52:06.605  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition video-aggregator-VIDEO_AGGREGATOR-changelog-0
+2023-10-16 22:52:06.626  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Cluster ID: lbUjHNy0RMeo_r_GCg80HA
+2023-10-16 22:52:06.640  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition video-aggregator-VIDEO_AGGREGATOR-changelog-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 22:52:06.743  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StoreChangelogReader         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Finished restoring changelog video-aggregator-VIDEO_AGGREGATOR-changelog-0 to store VIDEO_AGGREGATOR with a total number of 0 records
+2023-10-16 22:52:06.746  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 22:52:06.747  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.748  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.748  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.748  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 22:52:06.754  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Restored and ready to run
+2023-10-16 22:52:06.754  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Restoration took 507 ms for all tasks [0_0, 1_0]
+2023-10-16 22:52:06.754  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-10-16 22:52:06.756  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from REBALANCING to RUNNING
+2023-10-16 22:52:06.757  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Requesting the log end offset for videos-pcs-0 in order to compute lag
+2023-10-16 22:52:06.760  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Requesting the log end offset for video-aggregator-VIDEO_AGGREGATOR-repartition-0 in order to compute lag
+2023-10-16 22:52:11.024  INFO 17204 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 22:52:11.025  INFO 17204 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 22:52:11.028  INFO 17204 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-16 22:52:56.550  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Received video -> key: {"video_identifier": "VIDEO-1", "creator_identifier": "CREATOR-123"}, value: {"video_identifier": "VIDEO-1", "title": "Title", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "Description of video", "views": 986124355, "resolution": "HD", "privacy": "PUBLIC"}
+2023-10-16 22:52:56.910 ERROR 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Failed to process stream task 1_0 due to the following error:
+
+org.apache.kafka.streams.errors.StreamsException: Exception caught in process. taskId=1_0, processor=VIDEO_AGGREGATOR-repartition-source, topic=video-aggregator-VIDEO_AGGREGATOR-repartition, partition=0, offset=0, stacktrace=org.apache.kafka.common.errors.SerializationException: Error retrieving Avro unknown schema for id 8
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer$DeserializationContext.schemaFromRegistry(AbstractKafkaAvroDeserializer.java:276)
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer.deserialize(AbstractKafkaAvroDeserializer.java:97)
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer.deserialize(AbstractKafkaAvroDeserializer.java:76)
+	at io.confluent.kafka.serializers.KafkaAvroDeserializer.deserialize(KafkaAvroDeserializer.java:55)
+	at io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer.deserialize(SpecificAvroDeserializer.java:66)
+	at io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer.deserialize(SpecificAvroDeserializer.java:38)
+	at org.apache.kafka.streams.state.internals.ValueAndTimestampDeserializer.deserialize(ValueAndTimestampDeserializer.java:58)
+	at org.apache.kafka.streams.state.internals.ValueAndTimestampDeserializer.deserialize(ValueAndTimestampDeserializer.java:31)
+	at org.apache.kafka.streams.state.StateSerdes.valueFrom(StateSerdes.java:163)
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.outerValue(MeteredKeyValueStore.java:318)
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.lambda$get$2(MeteredKeyValueStore.java:209)
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:824)
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.get(MeteredKeyValueStore.java:209)
+	at org.apache.kafka.streams.processor.internals.AbstractReadWriteDecorator$KeyValueStoreReadWriteDecorator.get(AbstractReadWriteDecorator.java:88)
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:105)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:146)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forwardInternal(ProcessorContextImpl.java:253)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:232)
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:191)
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:84)
+	at org.apache.kafka.streams.processor.internals.StreamTask.lambda$process$1(StreamTask.java:731)
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:809)
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:731)
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:1296)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:784)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:604)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:576)
+Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema 8 not found; error code: 40403
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:293)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:352)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.getId(RestService.java:660)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.getId(RestService.java:642)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaByIdFromRegistry(CachedSchemaRegistryClient.java:217)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaBySubjectAndId(CachedSchemaRegistryClient.java:291)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaById(CachedSchemaRegistryClient.java:276)
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer$DeserializationContext.schemaFromRegistry(AbstractKafkaAvroDeserializer.java:273)
+	... 26 more
+
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:758) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.TaskManager.process(TaskManager.java:1296) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:784) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:604) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:576) ~[kafka-streams-3.1.2.jar:na]
+Caused by: org.apache.kafka.common.errors.SerializationException: Error retrieving Avro unknown schema for id 8
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer$DeserializationContext.schemaFromRegistry(AbstractKafkaAvroDeserializer.java:276) ~[kafka-avro-serializer-5.5.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer.deserialize(AbstractKafkaAvroDeserializer.java:97) ~[kafka-avro-serializer-5.5.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer.deserialize(AbstractKafkaAvroDeserializer.java:76) ~[kafka-avro-serializer-5.5.0.jar:na]
+	at io.confluent.kafka.serializers.KafkaAvroDeserializer.deserialize(KafkaAvroDeserializer.java:55) ~[kafka-avro-serializer-5.5.0.jar:na]
+	at io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer.deserialize(SpecificAvroDeserializer.java:66) ~[kafka-streams-avro-serde-5.5.0.jar:na]
+	at io.confluent.kafka.streams.serdes.avro.SpecificAvroDeserializer.deserialize(SpecificAvroDeserializer.java:38) ~[kafka-streams-avro-serde-5.5.0.jar:na]
+	at org.apache.kafka.streams.state.internals.ValueAndTimestampDeserializer.deserialize(ValueAndTimestampDeserializer.java:58) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.state.internals.ValueAndTimestampDeserializer.deserialize(ValueAndTimestampDeserializer.java:31) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.state.StateSerdes.valueFrom(StateSerdes.java:163) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.outerValue(MeteredKeyValueStore.java:318) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.lambda$get$2(MeteredKeyValueStore.java:209) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:824) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.get(MeteredKeyValueStore.java:209) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.AbstractReadWriteDecorator$KeyValueStoreReadWriteDecorator.get(AbstractReadWriteDecorator.java:88) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.kstream.internals.KStreamAggregate$KStreamAggregateProcessor.process(KStreamAggregate.java:105) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.process(ProcessorNode.java:146) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forwardInternal(ProcessorContextImpl.java:253) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:232) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.ProcessorContextImpl.forward(ProcessorContextImpl.java:191) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.SourceNode.process(SourceNode.java:84) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamTask.lambda$process$1(StreamTask.java:731) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:809) ~[kafka-streams-3.1.2.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamTask.process(StreamTask.java:731) ~[kafka-streams-3.1.2.jar:na]
+	... 4 common frames omitted
+Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Schema 8 not found; error code: 40403
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:293) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:352) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.getId(RestService.java:660) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.getId(RestService.java:642) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaByIdFromRegistry(CachedSchemaRegistryClient.java:217) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaBySubjectAndId(CachedSchemaRegistryClient.java:291) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.getSchemaById(CachedSchemaRegistryClient.java:276) ~[kafka-schema-registry-client-5.5.0.jar:na]
+	at io.confluent.kafka.serializers.AbstractKafkaAvroDeserializer$DeserializationContext.schemaFromRegistry(AbstractKafkaAvroDeserializer.java:273) ~[kafka-avro-serializer-5.5.0.jar:na]
+	... 26 common frames omitted
+
+2023-10-16 22:52:56.911  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 22:52:56.911  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Shutting down
+2023-10-16 22:52:56.912  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Suspended RUNNING
+2023-10-16 22:52:56.913  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Suspended running
+2023-10-16 22:52:56.916  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 22:52:56.929  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Closing record collector dirty
+2023-10-16 22:52:56.930  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Closed dirty
+2023-10-16 22:52:56.931  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Suspended RUNNING
+2023-10-16 22:52:56.931  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Suspended running
+2023-10-16 22:52:56.933  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 22:52:56.933  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Closing record collector dirty
+2023-10-16 22:52:56.934  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Closed dirty
+2023-10-16 22:52:56.935  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-10-16 22:52:56.947  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:56.948  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:56.948  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:56.948  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer unregistered
+2023-10-16 22:52:56.949  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 22:52:56.950  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:56.951  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:56.951  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:56.958  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer unregistered
+2023-10-16 22:52:56.959  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:52:56.960  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:52:56.960  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:52:56.965  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer unregistered
+2023-10-16 22:52:56.968  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-10-16 22:52:56.968  INFO 17204 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Shutdown complete
+2023-10-16 22:54:21.426  INFO 17204 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 22:54:21.428  INFO 17204 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin unregistered
+2023-10-16 22:54:21.442  INFO 17204 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.442  INFO 17204 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.443  INFO 17204 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.444  INFO 17204 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 22:54:21.445  INFO 17204 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 22:54:21.445  INFO 17204 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 22:54:21.445  INFO 17204 --- [kafka-streams-close-thread] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-10-16 22:54:21.446  INFO 17204 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Streams client stopped completely
+2023-10-16 22:54:21.447  INFO 17204 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 22:54:21.447  INFO 17204 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-aggregator.errorChannel' has 0 subscriber(s).
+2023-10-16 22:54:21.448  INFO 17204 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-10-16 23:11:14.222  INFO 1144 --- [main] com.hiberus.VideoAggregatorApplication   : Starting VideoAggregatorApplication using Java 17.0.8 on HL-014830 with PID 1144 (C:\Users\jlsierra\University_Microservicios\yelteberus\video-aggregator\target\classes started by jlsierra in C:\Users\jlsierra\University_Microservicios\yelteberus)
+2023-10-16 23:11:14.238  INFO 1144 --- [main] com.hiberus.VideoAggregatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-16 23:11:17.753  INFO 1144 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-10-16 23:11:17.797  INFO 1144 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-10-16 23:11:19.532  INFO 1144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-10-16 23:11:19.567  INFO 1144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-16 23:11:19.568  INFO 1144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-10-16 23:11:20.039  INFO 1144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-16 23:11:20.040  INFO 1144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5559 ms
+2023-10-16 23:11:22.739  INFO 1144 --- [main] c.f.c.c.BeanFactoryAwareFunctionRegistry : Looking up function 'aggregateVideos' with acceptedOutputTypes: []
+2023-10-16 23:11:23.542  INFO 1144 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:23.575  INFO 1144 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:23.581  INFO 1144 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Key Serde used for aggregateVideos-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:11:23.582  INFO 1144 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:23.585  INFO 1144 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:23.586  INFO 1144 --- [main] .c.s.b.k.s.KafkaStreamsFunctionProcessor : Value Serde used for aggregateVideos-in-0: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:11:23.604  INFO 1144 --- [main] .k.s.AbstractKafkaStreamsBinderProcessor : Native decoding is enabled for aggregateVideos-in-0. Inbound deserialization done at the broker.
+2023-10-16 23:11:23.663  INFO 1144 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2023-10-16 23:11:23.954  INFO 1144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 23:11:23.955  INFO 1144 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-aggregator.errorChannel' has 1 subscriber(s).
+2023-10-16 23:11:23.957  INFO 1144 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-10-16 23:11:25.403  INFO 1144 --- [main] o.s.c.s.b.k.p.KafkaTopicProvisioner      : Using kafka topic for outbound: videos-aggregator
+2023-10-16 23:11:25.409  INFO 1144 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 23:11:25.678  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:25.681  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:25.682  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490685674
+2023-10-16 23:11:27.050  INFO 1144 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-10-16 23:11:27.070  INFO 1144 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:11:27.071  INFO 1144 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:11:27.072  INFO 1144 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:11:27.078  INFO 1144 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:27.079  INFO 1144 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:27.079  INFO 1144 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Key Serde used for (outbound) videos-aggregator: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:11:27.080  INFO 1144 --- [main] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:27.081  INFO 1144 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:27.093  INFO 1144 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Value Serde used for (outbound) videos-aggregator: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+2023-10-16 23:11:27.094  INFO 1144 --- [main] o.s.c.s.b.kafka.streams.KStreamBinder    : Native encoding is enabled for videos-aggregator. Outbound serialization done at the broker.
+2023-10-16 23:11:27.155  INFO 1144 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 23:11:27.178  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:27.179  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:27.180  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490687178
+2023-10-16 23:11:27.365  INFO 1144 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2023-10-16 23:11:27.386  INFO 1144 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:11:27.386  INFO 1144 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:11:27.386  INFO 1144 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:11:27.438  INFO 1144 --- [main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = video-aggregator
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 100
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-10-16 23:11:27.512  WARN 1144 --- [main] o.a.k.s.p.internals.StateDirectory       : Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [C:\Users\jlsierra\AppData\Local\Temp\\kafka-streams]
+2023-10-16 23:11:27.512 ERROR 1144 --- [main] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\jlsierra\AppData\Local\Temp\kafka-streams
+2023-10-16 23:11:27.514 ERROR 1144 --- [main] o.a.k.s.p.internals.StateDirectory       : Failed to change permissions for the directory C:\Users\jlsierra\AppData\Local\Temp\kafka-streams\video-aggregator
+2023-10-16 23:11:27.687  INFO 1144 --- [main] o.a.k.s.p.internals.StateDirectory       : Reading UUID from process file: 44b25ab0-b5f0-4e42-add3-67b7b992052a
+2023-10-16 23:11:27.709  INFO 1144 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-10-16 23:11:27.727  WARN 1144 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:11:27.728  WARN 1144 --- [main] o.a.k.clients.admin.AdminClientConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:11:27.728  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:27.729  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:27.729  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490687728
+2023-10-16 23:11:27.734  INFO 1144 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Kafka Streams version: 3.1.2
+2023-10-16 23:11:27.736  INFO 1144 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Kafka Streams commit ID: f8c67dc3ae0a3265
+2023-10-16 23:11:27.760  INFO 1144 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating restore consumer client
+2023-10-16 23:11:27.775  INFO 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 23:11:27.864  WARN 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:11:27.864  WARN 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:11:27.865  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:27.867  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:27.868  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490687865
+2023-10-16 23:11:27.908  INFO 1144 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating thread producer client
+2023-10-16 23:11:27.923  INFO 1144 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-10-16 23:11:27.963  INFO 1144 --- [main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Instantiated an idempotent producer.
+2023-10-16 23:11:28.018  WARN 1144 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:11:28.019  WARN 1144 --- [main] o.a.k.clients.producer.ProducerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:11:28.019  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:28.019  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:28.020  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490688019
+2023-10-16 23:11:28.030  INFO 1144 --- [main] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Creating consumer client
+2023-10-16 23:11:28.037  INFO 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = video-aggregator
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-16 23:11:28.046  INFO 1144 --- [kafka-producer-network-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Cluster ID: S-mq1eDHR_KlGC89FCOvDA
+2023-10-16 23:11:28.072  INFO 1144 --- [kafka-producer-network-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] ProducerId set to 0 with epoch 0
+2023-10-16 23:11:28.086  INFO 1144 --- [main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-10-16 23:11:28.131  WARN 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'auto.register.schemas' was supplied but isn't a known config.
+2023-10-16 23:11:28.132  WARN 1144 --- [main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'schema.registry.url' was supplied but isn't a known config.
+2023-10-16 23:11:28.133  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-10-16 23:11:28.133  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-10-16 23:11:28.133  INFO 1144 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1697490688133
+2023-10-16 23:11:28.153  INFO 1144 --- [main] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from CREATED to REBALANCING
+2023-10-16 23:11:28.158  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Starting
+2023-10-16 23:11:28.159  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from CREATED to STARTING
+2023-10-16 23:11:28.162  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Subscribed to topic(s): video-aggregator-VIDEO_AGGREGATOR-repartition, videos-pcs
+2023-10-16 23:11:28.213  WARN 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Error while fetching metadata with correlation id 2 : {video-aggregator-VIDEO_AGGREGATOR-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 23:11:28.216  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Cluster ID: S-mq1eDHR_KlGC89FCOvDA
+2023-10-16 23:11:28.219  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-10-16 23:11:28.223  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 23:11:28.239  INFO 1144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-10-16 23:11:28.278  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-10-16 23:11:28.285  INFO 1144 --- [main] com.hiberus.VideoAggregatorApplication   : Started VideoAggregatorApplication in 15.303 seconds (JVM running for 16.434)
+2023-10-16 23:11:28.303  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Request joining group due to: need to re-join with the given member-id
+2023-10-16 23:11:28.304  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 23:11:28.321  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully joined group with generation Generation{generationId=1, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d', protocol='stream'}
+2023-10-16 23:11:28.350  WARN 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Error while fetching metadata with correlation id 7 : {video-aggregator-VIDEO_AGGREGATOR-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2023-10-16 23:11:28.765  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] All members participating in this rebalance: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a: [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d].
+2023-10-16 23:11:28.782  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([1_0]) changelogOffsetTotalsByTask: ([1_0=0]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2023-10-16 23:11:28.787  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Assigned tasks [1_0, 0_0] including stateful [1_0] to clients as: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([])].
+2023-10-16 23:11:28.804  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Client 44b25ab0-b5f0-4e42-add3-67b7b992052a per-consumer assignment:
+	prev owned active {}
+	prev owned standby {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=[1_0]}
+	assigned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=[1_0, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 23:11:28.805  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 23:11:28.807  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Finished assignment for group at generation 1: {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)}
+2023-10-16 23:11:28.825  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully synced group in generation Generation{generationId=1, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d', protocol='stream'}
+2023-10-16 23:11:28.826  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Updating assignment with
+	Assigned partitions:                       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 23:11:28.828  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Notifying assignor about the new Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)
+2023-10-16 23:11:28.829  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 23:11:28.833  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-10-16 23:11:28.890  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Adding newly assigned partitions: videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 23:11:28.890  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-10-16 23:11:28.892  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Request joining group due to: cached metadata has changed from (version3: {videos-pcs=1}) at the beginning of the rebalance to (version4: {videos-pcs=1, video-aggregator-VIDEO_AGGREGATOR-repartition=1})
+2023-10-16 23:11:28.894  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] (Re-)joining group
+2023-10-16 23:11:28.910  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully joined group with generation Generation{generationId=2, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d', protocol='stream'}
+2023-10-16 23:11:28.946  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] All members participating in this rebalance: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a: [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d].
+2023-10-16 23:11:28.947  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([0_0, 1_0]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([1_0=0]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2023-10-16 23:11:28.948  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Assigned tasks [1_0, 0_0] including stateful [1_0] to clients as: 
+44b25ab0-b5f0-4e42-add3-67b7b992052a=[activeTasks: ([0_0, 1_0]) standbyTasks: ([])].
+2023-10-16 23:11:28.950  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Client 44b25ab0-b5f0-4e42-add3-67b7b992052a per-consumer assignment:
+	prev owned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=[1_0, 0_0]}
+	prev owned standby {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=[]}
+	assigned active {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=[1_0, 0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-10-16 23:11:28.950  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-10-16 23:11:28.951  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Finished assignment for group at generation 2: {video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d=Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)}
+2023-10-16 23:11:28.954  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Initialized
+2023-10-16 23:11:28.961  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:28.961  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:28.966  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:28.967  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.057  INFO 1144 --- [kafka-coordinator-heartbeat-thread | video-aggregator] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Successfully synced group in generation Generation{generationId=2, memberId='video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer-a643101c-0c9d-4f7f-9d05-221edea4ff2d', protocol='stream'}
+2023-10-16 23:11:29.620  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.s.i.RocksDBTimestampedStore      : Opening store VIDEO_AGGREGATOR in regular mode
+2023-10-16 23:11:29.632  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Initialized
+2023-10-16 23:11:29.643  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition videos-pcs-0
+2023-10-16 23:11:29.648  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.650  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.651  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.652  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.653  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Restored and ready to run
+2023-10-16 23:11:29.663  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): video-aggregator-VIDEO_AGGREGATOR-changelog-0
+2023-10-16 23:11:29.666  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition video-aggregator-VIDEO_AGGREGATOR-changelog-0
+2023-10-16 23:11:29.691  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Cluster ID: S-mq1eDHR_KlGC89FCOvDA
+2023-10-16 23:11:29.710  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition video-aggregator-VIDEO_AGGREGATOR-changelog-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 23:11:29.823  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StoreChangelogReader         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Finished restoring changelog video-aggregator-VIDEO_AGGREGATOR-changelog-0 to store VIDEO_AGGREGATOR with a total number of 0 records
+2023-10-16 23:11:29.831  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Updating assignment with
+	Assigned partitions:                       [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Current owned partitions:                  [videos-pcs-0, video-aggregator-VIDEO_AGGREGATOR-repartition-0]
+	Added partitions (assigned - owned):       []
+	Revoked partitions (owned - assigned):     []
+
+2023-10-16 23:11:29.832  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Notifying assignor about the new Assignment(partitions=[video-aggregator-VIDEO_AGGREGATOR-repartition-0, videos-pcs-0], userDataSize=64)
+2023-10-16 23:11:29.832  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-10-16 23:11:29.833  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0, 0_0]
+	New standby tasks: []
+	Existing active tasks: [1_0, 0_0]
+	Existing standby tasks: []
+2023-10-16 23:11:29.835  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Adding newly assigned partitions: 
+2023-10-16 23:11:29.835  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PARTITIONS_ASSIGNED to PARTITIONS_ASSIGNED
+2023-10-16 23:11:29.839  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition videos-pcs-0
+2023-10-16 23:11:29.840  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 23:11:29.851  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 23:11:29.853  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.854  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.854  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroSerializerConfig        : KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.855  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-10-16 23:11:29.863  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Restored and ready to run
+2023-10-16 23:11:29.863  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Restoration took 28 ms for all tasks [0_0, 1_0]
+2023-10-16 23:11:29.866  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-10-16 23:11:29.869  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from REBALANCING to RUNNING
+2023-10-16 23:11:29.871  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Requesting the log end offset for videos-pcs-0 in order to compute lag
+2023-10-16 23:11:29.876  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Requesting the log end offset for video-aggregator-VIDEO_AGGREGATOR-repartition-0 in order to compute lag
+2023-10-16 23:11:29.887  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition videos-pcs-0
+2023-10-16 23:11:29.888  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Found no committed offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0
+2023-10-16 23:11:29.893  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Resetting offset for partition videos-pcs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 23:11:29.895  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer, groupId=video-aggregator] Resetting offset for partition video-aggregator-VIDEO_AGGREGATOR-repartition-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-10-16 23:11:32.932  INFO 1144 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-16 23:11:32.933  INFO 1144 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-16 23:11:32.936  INFO 1144 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-16 23:11:56.395  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Received video -> key: {"video_identifier": "VIDEO-1", "creator_identifier": "CREATOR-123"}, value: {"video_identifier": "VIDEO-1", "title": "Title", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "Description of video", "views": 994582627, "resolution": "FHD", "privacy": "PUBLIC"}
+2023-10-16 23:11:56.891  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Grouped videos -> key: {"creator_identifier": "CREATOR-123"}, value: {"videos": [{"video_identifier": "VIDEO-1", "title": "Title", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "Description of video", "views": 994582627, "resolution": "FHD", "privacy": "PUBLIC"}]}
+2023-10-16 23:13:28.367  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Processed 2 total records, ran 0 punctuators, and committed 2 total tasks since the last update
+2023-10-16 23:13:37.776  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Received video -> key: {"video_identifier": "VIDEO-2", "creator_identifier": "CREATOR-123"}, value: {"video_identifier": "VIDEO-2", "title": "Title", "duration": "15:27", "upload_date": "2023-10-18", "format": "AVI", "categories": ["TECHNOLOGY", "SCIENCE"], "description": "Description of video", "views": 1491143748, "resolution": "UHD", "privacy": "PRIVATE"}
+2023-10-16 23:13:37.995  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Grouped videos -> key: {"creator_identifier": "CREATOR-123"}, value: {"videos": [{"video_identifier": "VIDEO-1", "title": "Title", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "Description of video", "views": 994582627, "resolution": "FHD", "privacy": "PUBLIC"}, {"video_identifier": "VIDEO-2", "title": "Title", "duration": "15:27", "upload_date": "2023-10-18", "format": "AVI", "categories": ["TECHNOLOGY", "SCIENCE"], "description": "Description of video", "views": 1491143748, "resolution": "UHD", "privacy": "PRIVATE"}]}
+2023-10-16 23:13:50.793  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Received video -> key: {"video_identifier": "VIDEO-A", "creator_identifier": "CREATOR-1234"}, value: {"video_identifier": "VIDEO-A", "title": "Minecraft gameplay", "duration": "03:47:15", "upload_date": "2023-10-18", "format": "MP4", "categories": ["GAMES"], "description": "Minecraft gameplay ep. 20", "views": 1590489930, "resolution": "FHD", "privacy": "PRIVATE"}
+2023-10-16 23:13:51.028  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Grouped videos -> key: {"creator_identifier": "CREATOR-1234"}, value: {"videos": [{"video_identifier": "VIDEO-A", "title": "Minecraft gameplay", "duration": "03:47:15", "upload_date": "2023-10-18", "format": "MP4", "categories": ["GAMES"], "description": "Minecraft gameplay ep. 20", "views": 1590489930, "resolution": "FHD", "privacy": "PRIVATE"}]}
+2023-10-16 23:14:42.866  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Received video -> key: {"video_identifier": "VIDEO-1", "creator_identifier": "CREATOR-123"}, value: {"video_identifier": "VIDEO-1", "title": "The animations of John", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "A new animation video about comedy", "views": 940049015, "resolution": "UHD", "privacy": "PRIVATE"}
+2023-10-16 23:14:43.096  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] c.h.s.impl.VideoAggregatorServiceImpl    : [videoAggregator] Grouped videos -> key: {"creator_identifier": "CREATOR-123"}, value: {"videos": [{"video_identifier": "VIDEO-2", "title": "Title", "duration": "15:27", "upload_date": "2023-10-18", "format": "AVI", "categories": ["TECHNOLOGY", "SCIENCE"], "description": "Description of video", "views": 1491143748, "resolution": "UHD", "privacy": "PRIVATE"}, {"video_identifier": "VIDEO-1", "title": "The animations of John", "duration": "02:23:30", "upload_date": "2023-10-18", "format": "MP4", "categories": ["ANIMATION", "COMEDY"], "description": "A new animation video about comedy", "views": 940049015, "resolution": "UHD", "privacy": "PRIVATE"}]}
+2023-10-16 23:15:28.448  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Processed 6 total records, ran 0 punctuators, and committed 6 total tasks since the last update
+2023-10-16 23:16:27.769  INFO 1144 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] Node -1 disconnected.
+2023-10-16 23:17:20.594  INFO 1144 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 23:17:20.597  INFO 1144 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Informed to shut down
+2023-10-16 23:17:20.597  INFO 1144 --- [kafka-streams-close-thread] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-10-16 23:17:20.604  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Shutting down
+2023-10-16 23:17:20.628  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Suspended RUNNING
+2023-10-16 23:17:20.628  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Suspended running
+2023-10-16 23:17:20.634  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): video-aggregator-VIDEO_AGGREGATOR-changelog-0
+2023-10-16 23:17:20.635  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Closing record collector clean
+2023-10-16 23:17:20.635  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [0_0] Closed clean
+2023-10-16 23:17:20.636  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Suspended RUNNING
+2023-10-16 23:17:20.636  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Suspended running
+2023-10-16 23:17:20.638  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 23:17:20.651  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.RecordCollectorImpl  : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Closing record collector clean
+2023-10-16 23:17:20.653  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] task [1_0] Closed clean
+2023-10-16 23:17:20.655  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-10-16 23:17:20.665  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.666  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.666  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.667  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-producer unregistered
+2023-10-16 23:17:20.669  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-10-16 23:17:20.671  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.671  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.672  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.687  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-consumer unregistered
+2023-10-16 23:17:20.688  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.688  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.688  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.697  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1-restore-consumer unregistered
+2023-10-16 23:17:20.700  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-10-16 23:17:20.701  INFO 1144 --- [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-StreamThread-1] Shutdown complete
+2023-10-16 23:17:20.702  INFO 1144 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin unregistered
+2023-10-16 23:17:20.707  INFO 1144 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.708  INFO 1144 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.708  INFO 1144 --- [kafka-admin-client-thread | video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a-admin] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.709  INFO 1144 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-10-16 23:17:20.709  INFO 1144 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-10-16 23:17:20.710  INFO 1144 --- [kafka-streams-close-thread] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-10-16 23:17:20.711  INFO 1144 --- [kafka-streams-close-thread] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-10-16 23:17:20.712  INFO 1144 --- [SpringApplicationShutdownHook] org.apache.kafka.streams.KafkaStreams    : stream-client [video-aggregator-44b25ab0-b5f0-4e42-add3-67b7b992052a] Streams client stopped completely
+2023-10-16 23:17:20.713  INFO 1144 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-10-16 23:17:20.714  INFO 1144 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'video-aggregator.errorChannel' has 0 subscriber(s).
+2023-10-16 23:17:20.715  INFO 1144 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
