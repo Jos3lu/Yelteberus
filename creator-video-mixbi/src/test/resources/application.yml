@@ -1,0 +1,53 @@
+topic-in-0: creators
+topic-in-1: videos-aggregator
+topic-out-0: creators-videos
+
+spring:
+  application:
+    name: creator-video-mixbi
+
+  cloud:
+    # Functions
+    function:
+      definition: joiner;
+    stream:
+      # Configuration between topics & functions
+      bindings:
+        joiner-in-0:
+          destination: ${topic-in-0}
+          consumer:
+            concurrency: 1
+            useNativeDecoding: true
+        joiner-in-1:
+          destination: ${topic-in-1}
+          consumer:
+            concurrency: 1
+            useNativeDecoding: true
+        joiner-out-0:
+          destination: ${topic-out-0}
+          producer:
+            useNativeEncoding: true
+      kafka:
+        streams:
+          # Consumer configuration
+          bindings:
+            joiner-in-0:
+              consumer:
+                keySerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                valueSerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                applicationId: ${spring.application.name}
+            joiner-in-1:
+              consumer:
+                keySerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                valueSerde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+                applicationId: ${spring.application.name}
+          # Kafka configuration
+          binder:
+            configuration:
+              commit.interval.ms: 5000
+              cache.max.bytes.buffering: 10000
+              session.timeout.ms: 10000
+              schema.registry.url: mock://not-used
+              auto.register.schemas: true
+              default.key.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+              default.value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
