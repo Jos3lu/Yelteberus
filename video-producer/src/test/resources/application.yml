@@ -11,5 +11,5 @@ spring:
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       properties:
         auto-offset-reset: earliest
-        grupo-id: test-video-producer
+        group-id: test-video-producer
         schema.registry.url: mock://not-used
